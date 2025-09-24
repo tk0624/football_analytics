@@ -1,0 +1,24 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# すべて無視しない（最初の * を消す）
+# 以下は個別に無視したいものを列挙
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+Lib/
+Include/
+Scripts/
+share/
+
+# 環境ファイル
+.env
+
+# その他
+.DS_Store

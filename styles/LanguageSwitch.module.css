@@ -1,0 +1,25 @@
+.wrap {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 6px;
+  z-index: 50;
+}
+.btn {
+  background: rgba(20,24,32,.6);
+  color: #e8eef7;
+  border: 1px solid #2a3342;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+.btn:hover { border-color: #3a475d; }
+.active {
+  background: #58a6ff;
+  color: #06101b;
+  box-shadow: 0 0 20px rgba(88,166,255,.25);
+  border-color: #58a6ff;
+}
