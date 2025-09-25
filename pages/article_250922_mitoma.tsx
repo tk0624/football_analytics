@@ -1,3 +1,5 @@
+// pages/article_250922_mitoma.tsx
+import Layout from "../components/Layout";
 import { useI18n } from "../contexts/I18n";
 
 export default function MitomaArticle() {

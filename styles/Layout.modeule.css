@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #333;
+}
+
+.menuLink:hover {
+  text-decoration: underline;
+}

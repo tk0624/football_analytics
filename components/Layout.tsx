@@ -1,9 +1,9 @@
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import { useI18n } from "../contexts/I18n";
-import LanguageSwitch from "../components/LanguageSwitch";
+import LanguageSwitch from "./LanguageSwitch";
+import styles from "../styles/Layout.module.css";
 
-export default function Home() {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const { t } = useI18n();
 
   return (
@@ -22,19 +22,7 @@ export default function Home() {
           <LanguageSwitch />
         </div>
       </header>
-
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1>{t("homeTitle")}</h1>
-          <p>{t("homeLead")}</p>
-          <div className={styles.ctaRow}>
-            <Link href="./article_250922_mitoma/" className={styles.ctaPrimary}>
-              {t("ctaReadMitoma")}
-            </Link>
-          </div>
-        </div>
-      </section>
-      {/* ここに追加コンテンツを配置 */}
+      <main>{children}</main>
     </div>
   );
 }
