@@ -28,19 +28,41 @@
 .menuLink:hover { color:var(--text); }
 
 /* ─ Hero ─ */
-.hero { padding: 56px 28px 24px; display:flex; justify-content:center; }
-.heroContent { max-width: 980px; text-align:left; }
-.heroContent h1 { font-size: clamp(28px, 4.2vw, 56px); line-height:1.05; margin: 0 0 10px; }
-.heroContent p { color: var(--muted); font-size: clamp(14px, 2vw, 18px); margin: 0 0 18px; }
-.ctaRow { display:flex; gap:12px; flex-wrap:wrap; margin: 18px 0 6px; }
-.ctaPrimary, .ctaGhost {
-  display:inline-block; padding: 10px 16px; border-radius: 10px; text-decoration:none; font-weight:600;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 320px; /* 高さはお好みで調整可能 */
+  background-image: url("/images/hero-bg.jpg"); /* public/images/hero-bg.jpg を参照 */
+  background-size: cover;      /* 横幅いっぱいに拡大 */
+  background-position: center; /* 中央寄せ */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+  margin-bottom: 24px;
 }
-.ctaPrimary { background: var(--brand); color:#07111d; box-shadow: var(--glow); }
-.ctaPrimary:hover { filter: brightness(1.05); }
-.ctaGhost { border: 1px solid #263041; color: var(--text); }
-.ctaGhost:hover { background: #121926; }
-.heroMeta { display:flex; gap:16px; color:#7f8ca3; margin-top: 6px; font-size: 13px; flex-wrap:wrap; }
+
+.heroContent {
+  max-width: 980px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.35); /* 半透明で文字を読みやすく */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heroContent h1 {
+  font-size: clamp(28px, 4.2vw, 56px);
+  line-height: 1.05;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.heroContent p {
+  color: var(--muted);
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 0 0 18px;
+}
 
 /* ─ KPI strip ─ */
 .kpiStrip {

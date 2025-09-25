@@ -14,15 +14,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <span className={styles.logoDot} />
           <span className={styles.brand}>{t("brand")}</span>
         </div>
-        <div className={styles.navRight}>
-          <nav className={styles.menu}>
-            <Link href="./" className={styles.menuLink}>{t("navHome")}</Link>
-            <Link href="./article_250922_mitoma/" className={styles.menuLink}>{t("navArticles")}</Link>
-            <a href="./contact.html" className={styles.menuLink}>{t("navContact")}</a>
-          </nav>
-          <div className={styles.langSwitch}>
-            <LanguageSwitch />
-          </div>
+        <nav className={styles.menu}>
+          <Link href="./" className={styles.menuLink}>{t("navHome")}</Link>
+          <Link href="./article_250922_mitoma/" className={styles.menuLink}>{t("navArticles")}</Link>
+          <a href="./contact.html" className={styles.menuLink}>{t("navContact")}</a>
+        </nav>
+        <div className={styles.langSwitch}>
+          <LanguageSwitch />
         </div>
       </header>
       <main>{children}</main>
