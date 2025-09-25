@@ -23,7 +23,7 @@
 .navRight {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* PC時の余白を少し広めに */
+  gap: 1.5rem; /* navとlangの間隔を広めに */
 }
 
 .menu {
@@ -38,6 +38,11 @@
 
 .menuLink:hover {
   text-decoration: underline;
+}
+
+/* 言語切替を独立配置してメニューと重ならないようにする */
+.langSwitch {
+  flex-shrink: 0;
 }
 
 /* ▼ スマホ画面（768px以下）の場合 */

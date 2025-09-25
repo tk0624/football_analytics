@@ -1,0 +1,21 @@
+/* Article.module.css */
+.article {
+  min-height: 100vh;
+  background: #0b0d11;
+  color: #e8eef7;
+  padding: 24px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.lead {
+  color: #93a0b4;
+  margin-bottom: 18px;
+}
+
+.body {
+  color: #93a0b4;
+}

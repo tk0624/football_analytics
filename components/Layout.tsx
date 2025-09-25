@@ -20,7 +20,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="./article_250922_mitoma/" className={styles.menuLink}>{t("navArticles")}</Link>
             <a href="./contact.html" className={styles.menuLink}>{t("navContact")}</a>
           </nav>
-          <LanguageSwitch />
+          <div className={styles.langSwitch}>
+            <LanguageSwitch />
+          </div>
         </div>
       </header>
       <main>{children}</main>
