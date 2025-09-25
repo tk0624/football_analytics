@@ -1,3 +1,4 @@
+// components/Layout.tsx
 import Link from "next/link";
 import { useI18n } from "../contexts/I18n";
 import LanguageSwitch from "./LanguageSwitch";
