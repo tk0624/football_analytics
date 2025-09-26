@@ -2,13 +2,22 @@
 import Layout from "../components/Layout";
 import { useI18n } from "../contexts/I18n";
 import styles from "../styles/Home.module.css";
+import heroBg from "../public/images/hero-bg.png"; // ★ 追加
 
 export default function Home() {
   const { t } = useI18n();
 
   return (
     <Layout>
-      <section className={styles.hero}>
+      <section
+        className={styles.hero}
+        style={{
+          backgroundImage: `url(${heroBg.src})`, // ★ 背景画像をここで指定
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className={styles.heroContent}>
           <h1>{t("homeTitle")}</h1>
           <p>{t("homeLead")}</p>

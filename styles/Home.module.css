@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   height: 320px; /* 高さはお好みで調整可能 */
-  background-image: url("/football_analytics/images/hero-bg.png"); /* public/images/hero-bg.jpg を参照 */
+  /* background-image: url("/football_analytics/images/hero-bg.png"); public/images/hero-bg.jpg を参照 */
   background-size: cover;      /* 横幅いっぱいに拡大 */
   background-position: center; /* 中央寄せ */
   background-repeat: no-repeat;
