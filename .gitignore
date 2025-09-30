@@ -22,3 +22,6 @@ share/
 
 # その他
 .DS_Store
+
+# Data analytics (除外対象)
+data_analytics/
