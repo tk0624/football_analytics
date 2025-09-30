@@ -1,3 +1,4 @@
+// next.config.js
 const repo = 'football_analytics';
 
 const nextConfig = {
