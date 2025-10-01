@@ -18,7 +18,8 @@ export default function MitomaArticle() {
         {/* 分析画像 */}
         <div className={styles.imageWrapper}>
           <img
-            src="/images/articles/radar_chart_mitoma.png"
+            // src="/images/articles/radar_chart_mitoma.png"
+            src="https://github.com/tk0624/football_analytics/blob/main/docs/images/articles/radar_chart_mitoma.png"
             alt="三苫の24/25シーズン分析レーダーチャート"
             className={styles.image}
           />
