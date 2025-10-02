@@ -1,21 +1,22 @@
 /* Article.module.css */
 .article {
   min-height: 100vh;
-  background: #0b0d11;
-  color: #e8eef7;
+  background: #111111;   /* 少し明るめのダーク背景 */
+  color: #f5f5f5;        /* ベース文字色をオフホワイトに */
   padding: 24px;
 }
 
 .title {
   font-size: 28px;
   margin-bottom: 8px;
+  color: #7ed957;        /* ライトグリーンで強調 */
 }
 
 .lead {
-  color: #93a0b4;
+  color: #ff914d;        /* サブアクセントのオレンジ */
   margin-bottom: 18px;
 }
 
 .body {
-  color: #93a0b4;
+  color: #b0b0b0;        /* 読みやすいグレー */
 }

@@ -23,7 +23,7 @@ const dictionary: Dict = {
   navContact: { ja: "問い合わせ", en: "Contact" },
 
   // トップページ
-  homeTitle: { ja: "データで読むフットボール", en: "Data-driven Football Insight" },
+  homeTitle: { ja: "Samurai Metrics", en: "Samurai Metrics"},
   homeLead: {
     ja: "海外で活躍する日本人選手の“見えにくい貢献”を可視化。",
     en: "Revealing the ‘hidden’ contributions of Japanese players in Europe."
