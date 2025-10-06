@@ -4,6 +4,11 @@
   background: #111111;   /* 少し明るめのダーク背景 */
   color: #f5f5f5;        /* ベース文字色をオフホワイトに */
   padding: 24px;
+
+  /* 📏 幅の制御 */
+  width: 100%;
+  max-width: 980px;      /* PC時は読みやすい幅に制限 */
+  margin: 0 auto;        /* 中央寄せ */
 }
 
 .title {
@@ -19,4 +24,17 @@
 
 .body {
   color: #b0b0b0;        /* 読みやすいグレー */
+  line-height: 1.7;      /* 行間を少し広めにして読みやすく */
+}
+
+/* 📱 モバイル調整 */
+@media (max-width: 640px) {
+  .article {
+    padding: 16px;
+    max-width: 100%;     /* スマホでは横幅制限を解除して全幅表示 */
+  }
+
+  .title {
+    font-size: 22px;
+  }
 }
