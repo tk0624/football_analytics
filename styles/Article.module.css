@@ -14,11 +14,13 @@
 .title {
   font-size: 28px;
   margin-bottom: 8px;
-  color: #7ed957;        /* ライトグリーンで強調 */
+  /* color: #7ed957;        ライトグリーンで強調 */
+  color: #b0b0b0;        /* 読みやすいグレー */
 }
 
 .lead {
-  color: #ff914d;        /* サブアクセントのオレンジ */
+  /* color: #ff914d;        サブアクセントのオレンジ */
+  color: #b0b0b0;        /* 読みやすいグレー */
   margin-bottom: 18px;
 }
 
