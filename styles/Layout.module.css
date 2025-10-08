@@ -1,24 +1,11 @@
-/* styles/Layout.module.css */
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;         /* 🔹 ページ全体を中央寄せ */
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   background: #111111;
   color: #f5f5f5;
-  box-sizing: border-box;
-}
-
-/* ─ 言語切替 ─ */
-.langSwitchTop {
-  display: flex;
-  justify-content: center;     /* 🔹 ボタンを中央に */
-  align-items: center;
-  width: 100%;
-  padding: 8px 0;
-  background: transparent;
-  border-bottom: 1px solid #222; /* 軽い区切り線（任意） */
   box-sizing: border-box;
 }
 
@@ -64,11 +51,17 @@
   color: #ff914d;
 }
 
+.langSwitch {
+  display: flex;
+  justify-content: flex-end; /* 右端固定 */
+  flex-shrink: 0;
+}
+
 /* ─ Main Content ─ */
 .mainContent {
   display: block;
   width: 100%;
-  max-width: 980px;             /* 🔹 PCでは中央寄せ */
+  max-width: 980px;
   margin: 0 auto;
   padding: 24px 16px;
   flex: 1;
@@ -78,13 +71,7 @@
 /* ─ Responsive ─ */
 @media (max-width: 768px) {
   .page {
-    align-items: stretch;       /* モバイルでは全幅 */
-  }
-
-  .langSwitchTop {
-    justify-content: center;    /* モバイルでも中央寄せ */
-    width: 100%;
-    padding: 8px 0;
+    align-items: stretch;
   }
 
   .nav {
@@ -97,6 +84,11 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .langSwitch {
+    justify-content: flex-start;
     margin-top: 0.5rem;
   }
 
