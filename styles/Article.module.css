@@ -29,6 +29,29 @@
   line-height: 1.7;      /* 行間を少し広めにして読みやすく */
 }
 
+/* 画像コンテナ全体 */
+.imageWrapper {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* 画像サイズをレスポンシブ対応に */
+.image {
+  display: block;
+  max-width: 100%;  /* ✅ 親要素の幅に合わせて縮小 */
+  height: auto;     /* ✅ アスペクト比を維持 */
+  margin: 0 auto;
+  border-radius: 8px; /* optional: 角丸で見栄えUP */
+}
+
+/* キャプション */
+.caption {
+  color: #b0b0b0;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
 /* 📱 モバイル調整 */
 @media (max-width: 640px) {
   .article {
