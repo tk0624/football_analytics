@@ -3,23 +3,25 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #111111;
+  color: #f5f5f5;
 }
 
+/* ─ Nav ─ */
 .nav {
   display: grid;
-  grid-template-columns: 1fr auto 1fr; /* 左:ロゴ / 中央:メニュー / 右:言語切替 */
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
 }
 
-/* ロゴの文字色を変更 */
 .brand {
   font-weight: 700;
   letter-spacing: .2px;
-  color: #ffdd55;          /* 明るい色に変更 */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* 背景に溶け込まないよう影を追加 */
+  color: #7ed957; /* ライトグリーン */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 .logoArea {
@@ -30,41 +32,55 @@
 
 .menu {
   display: flex;
-  justify-content: center; /* メニュー中央寄せ */
+  justify-content: center;
   gap: 1rem;
 }
 
 .menuLink {
   text-decoration: none;
-  color: #333;
+  color: #b0b0b0;
 }
-
 .menuLink:hover {
   text-decoration: underline;
+  color: #ff914d;
 }
 
 .langSwitch {
   display: flex;
-  justify-content: flex-end; /* 言語切替は右寄せ */
+  justify-content: flex-end;
 }
 
-/* ▼ スマホ画面（768px以下）の場合 */
+/* ─ Main Content ─ */
+.mainContent {
+  width: 100%;
+  max-width: 980px;   /* 📏 PCでは中央に狭める */
+  margin: 0 auto;     /* 中央寄せ */
+  padding: 24px 16px; /* 左右に少し余白 */
+  flex: 1;            /* footerが下に来るように */
+}
+
+/* ─ Responsive ─ */
 @media (max-width: 768px) {
   .nav {
-    grid-template-columns: 1fr; /* 縦並びにする */
+    grid-template-columns: 1fr;
     justify-items: flex-start;
     align-items: flex-start;
   }
 
   .menu {
-    justify-content: flex-start; /* 左寄せ */
-    flex-direction: column;      /* 縦並び */
+    justify-content: flex-start;
+    flex-direction: column;
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
 
   .langSwitch {
-    justify-content: flex-start; /* 左寄せ */
+    justify-content: flex-start;
     margin-top: 0.5rem;
+  }
+
+  .mainContent {
+    max-width: 100%;  /* 📱 モバイルでは全幅表示 */
+    padding: 16px;
   }
 }
