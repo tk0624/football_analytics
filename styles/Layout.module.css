@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+/* ─ 言語切替（最上部中央） ─ */
+.langSwitchTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  background: transparent;
+  border-bottom: 1px solid #222; /* 軽く区切り線（お好みで削除OK） */
+  box-sizing: border-box;
+}
+
 /* ─ Nav ─ */
 .nav {
   display: flex;
@@ -51,12 +63,6 @@
   color: #ff914d;
 }
 
-.langSwitch {
-  display: flex;
-  justify-content: flex-end; /* 右端固定 */
-  flex-shrink: 0;
-}
-
 /* ─ Main Content ─ */
 .mainContent {
   display: block;
@@ -74,6 +80,12 @@
     align-items: stretch;
   }
 
+  .langSwitchTop {
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0;
+  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -84,11 +96,6 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .langSwitch {
-    justify-content: flex-start;
     margin-top: 0.5rem;
   }
 
