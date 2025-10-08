@@ -2,25 +2,31 @@
 .page {
   display: flex;
   flex-direction: column;
+  align-items: center;         /* 🔹 中央寄せ（最重要） */
+  width: 100%;
   min-height: 100vh;
   background: #111111;
   color: #f5f5f5;
+  box-sizing: border-box;
 }
 
 /* ─ Nav ─ */
 .nav {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;               /* grid → flex に変更して中央寄せ */
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1080px;           /* 🔹 横幅を中央で制限 */
   padding: 0.5rem 1rem;
   background: #1a1a1a;
   border-bottom: 1px solid #333;
+  box-sizing: border-box;
 }
 
 .brand {
   font-weight: 700;
   letter-spacing: .2px;
-  color: #7ed957; /* ライトグリーン */
+  color: #7ed957;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
@@ -40,6 +46,7 @@
   text-decoration: none;
   color: #b0b0b0;
 }
+
 .menuLink:hover {
   text-decoration: underline;
   color: #ff914d;
@@ -52,19 +59,25 @@
 
 /* ─ Main Content ─ */
 .mainContent {
+  display: block;
   width: 100%;
-  max-width: 980px;   /* 📏 PCでは中央に狭める */
-  margin: 0 auto;     /* 中央寄せ */
-  padding: 24px 16px; /* 左右に少し余白 */
-  flex: 1;            /* footerが下に来るように */
+  max-width: 980px;             /* PCでは中央に制限 */
+  margin: 0 auto;               /* 🔹 中央寄せ */
+  padding: 24px 16px;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 /* ─ Responsive ─ */
 @media (max-width: 768px) {
+  .page {
+    align-items: stretch;       /* モバイルでは全幅 */
+  }
+
   .nav {
-    grid-template-columns: 1fr;
-    justify-items: flex-start;
+    flex-direction: column;     /* 縦並びに変更 */
     align-items: flex-start;
+    max-width: 100%;
   }
 
   .menu {
@@ -80,7 +93,7 @@
   }
 
   .mainContent {
-    max-width: 100%;  /* 📱 モバイルでは全幅表示 */
+    max-width: 100%;
     padding: 16px;
   }
 }
