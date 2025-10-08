@@ -2,7 +2,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;         /* 🔹 中央寄せ（最重要） */
+  align-items: center;         /* 🔹 ページ全体を中央寄せ */
   width: 100%;
   min-height: 100vh;
   background: #111111;
@@ -10,13 +10,25 @@
   box-sizing: border-box;
 }
 
+/* ─ 言語切替 ─ */
+.langSwitchTop {
+  display: flex;
+  justify-content: center;     /* 🔹 ボタンを中央に */
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  background: transparent;
+  border-bottom: 1px solid #222; /* 軽い区切り線（任意） */
+  box-sizing: border-box;
+}
+
 /* ─ Nav ─ */
 .nav {
-  display: flex;               /* grid → flex に変更して中央寄せ */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1080px;           /* 🔹 横幅を中央で制限 */
+  max-width: 1080px;
   padding: 0.5rem 1rem;
   background: #1a1a1a;
   border-bottom: 1px solid #333;
@@ -52,17 +64,12 @@
   color: #ff914d;
 }
 
-.langSwitch {
-  display: flex;
-  justify-content: flex-end;
-}
-
 /* ─ Main Content ─ */
 .mainContent {
   display: block;
   width: 100%;
-  max-width: 980px;             /* PCでは中央に制限 */
-  margin: 0 auto;               /* 🔹 中央寄せ */
+  max-width: 980px;             /* 🔹 PCでは中央寄せ */
+  margin: 0 auto;
   padding: 24px 16px;
   flex: 1;
   box-sizing: border-box;
@@ -74,8 +81,14 @@
     align-items: stretch;       /* モバイルでは全幅 */
   }
 
+  .langSwitchTop {
+    justify-content: center;    /* モバイルでも中央寄せ */
+    width: 100%;
+    padding: 8px 0;
+  }
+
   .nav {
-    flex-direction: column;     /* 縦並びに変更 */
+    flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
   }
@@ -84,11 +97,6 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .langSwitch {
-    justify-content: flex-start;
     margin-top: 0.5rem;
   }
 

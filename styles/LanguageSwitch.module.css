@@ -1,10 +1,9 @@
 .wrap {
-  position: fixed;
-  top: 12px;
-  right: 12px;
   display: flex;
-  gap: 6px;
-  z-index: 50;
+  justify-content: center; /* 中央寄せ */
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
 }
 .btn {
   background: rgba(20,24,32,.6);
