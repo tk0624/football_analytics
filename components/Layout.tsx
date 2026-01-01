@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className={styles.page}>
-      {/* ✅ 言語切替をページ最上部中央に配置（ここだけ残す） */}
+      {/* 言語切替をページ最上部中央に配置（ここだけ残す） */}
       <div className={styles.langSwitchTop}>
         <LanguageSwitch />
       </div>
