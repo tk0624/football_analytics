@@ -23,13 +23,22 @@ const dictionary: Dict = {
   navContact: { ja: "問い合わせ", en: "Contact" },
 
   // トップページ
-  homeTitle: { ja: "Samurai Metrics", en: "Samurai Metrics"},
+  homeTitle: { ja: "Samurai Metrics", en: "Samurai Metrics" },
   homeLead: {
-    ja: "海外で活躍する日本人サッカー選手の“見えにくい貢献”を可視化。",
-    en: "Revealing the ‘hidden’ contributions of Japanese players in Europe."
+    ja: "海外で活躍する日本人サッカー選手の、見えにくい貢献をデータで捉える。",
+    en: "Examining the less visible contributions of Japanese players overseas."
   },
-  ctaReadMitoma: { ja: "三笘 24-25 分析を読む", en: "Read Mitoma 24-25 Review" },
 
+  // 記事CTA
+  ctaReadMitoma: {
+    ja: "三苫 24-25 シーズン分析を読む",
+    en: "Read Mitoma 2024/25 Analysis"
+  },
+
+  ctaReadArticle2: {
+    ja: "記事2",
+    en: "Article2"
+  },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {

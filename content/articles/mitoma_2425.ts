@@ -46,7 +46,7 @@ export const mitoma2425 = {
       src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_mitoma.png",
       alt: { 
         ja: "三苫 24/25シーズン レーダーチャート",
-        en: "Mitoma 2024/25 season radar chart",
+        en: "",
       },
       caption: {
         ja:
@@ -107,10 +107,10 @@ export const mitoma2425 = {
       type: "image",
       src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_comparison.png",
       alt: { ja: "三苫 vs 比較 レーダーチャート", en: "" },
-      caption: { ja: "三苫 vs ドク、マルティネリ 24/25シーズン", en: "" },
+      caption: { ja: "vs ドク、マルティネリ 24/25シーズン", en: "vs Doku, Martinelli for the 2024/25 season" },
     },
 
-    { type: "h2", text: { ja: "守備面での特徴", en: "" } },
+    { type: "h2", text: { ja: "守備面での特徴", en: "Defending profile" } },
     {
       type: "p",
       text: {
