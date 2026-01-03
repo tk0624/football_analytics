@@ -34,7 +34,10 @@ export const mitoma2425 = {
     {
       type: "image",
       src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_mitoma.png",
-      alt: { ja: "三苫 24/25 レーダーチャート", en: "" },
+      alt: { 
+        ja: "三苫 24/25シーズン レーダーチャート",
+        en: "Mitoma 2024/25 season radar chart",
+      },
       caption: {
         ja:
           "三苫の24/25シーズンにおける攻撃・守備・比較指標\n\n" +
@@ -46,7 +49,16 @@ export const mitoma2425 = {
           "ハーヴィー・バーンズ（ニューカッスル・ユナイテッド）\n" +
           "ジェイドン・サンチョ（チェルシー）\n" +
           "カラム・ハドソン＝オドイ（ノッティンガム・フォレスト）",
-        en: "",
+        en: 
+          "Radar chart of Kaoru Mitoma's attacking, defensive, and comparative metrics for the 2024/25 season.\n\n" +
+          "Players selected for comparison:\n" +
+          "Jeremy Doku (Manchester City)\n" +
+          "Gabriel Martinelli (Arsenal)\n" +
+          "Cody Gakpo (Liverpool)\n" +
+          "Pedro Neto (Chelsea)\n" +
+          "Harvey Barnes (Newcastle United)\n" +
+          "Jadon Sancho (Chelsea)\n" +
+          "Callum Hudson-Odoi (Nottingham Forest)",
       },
     },
 
@@ -56,8 +68,9 @@ export const mitoma2425 = {
       text: {
         ja:
           "高いxGを記録した一方で、決定機を逃す場面も少なくなかったことが示唆されている。\n" +
-          "これは、もっとゴールを挙げられたとも言えるが、相手にとっては危険な存在であったことも事実である。\n" +
-          "例えば、「右からのクロスにギリギリで飛び込む」、「スルーパスに抜け出してシュート」などが、ゴールを脅かした印象的なシーンとして挙げられる。",
+          "これは、もっとゴールを挙げられたとも言えるが、相手にとっては危険な存在であったことも事実だ。\n" +
+          "例えば、「右からのクロスにギリギリで飛び込む」、「スルーパスに抜け出してシュート」などが、ゴールを脅かした印象的なシーンとして挙げられる。 \n" +
+          "特に24/25シーズンからはスピードに定評のあるヤンクバ・ミンテと両翼を担い、多くのチャンスを創出している。",
         en: "",
       },
     },
@@ -67,7 +80,8 @@ export const mitoma2425 = {
         ja:
           "ドリブルやクロスの試行回数は、他のウインガーに比べると突出した数値ではない。\n" +
           "例えば、ドリブルではドク、クロスではマルティネリやネトの貢献が目立つ。\n" +
-          "これは、三苫が、やや成功率の劣る突破やクロスよりも、「チームとしての崩し」を優先してプレー選択する傾向が高いことが窺える。",
+          "これは、三苫が、やや成功率の劣る突破やクロスよりも、「チームとしての崩し」を優先してプレー選択する傾向が高いことが窺える。\n" +
+          "事実、近年ドリブル突破は意図的に抑えていることを三苫自身インタビューでも述べている。",
         en: "",
       },
     },

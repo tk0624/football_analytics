@@ -44,6 +44,16 @@
   border-radius: 8px; /* optional: 角丸で見栄えUP */
 }
 
+/* イメージキャプション */
+.imageCaption {
+  max-width: 720px;      /* 画像幅に合わせて調整 */
+  margin: 12px auto 0;  /* 中央配置 */
+  text-align: left;     /* ← これがポイント */
+  white-space: pre-line;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 /* キャプション */
 .caption {
   color: #b0b0b0;
