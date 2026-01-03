@@ -12,7 +12,7 @@ export const mitoma2425 = {
   slug: "article_250922_mitoma",
   title: {
     ja: "三苫薫 24/25シーズン分析",
-    en: "",
+    en: "Kaoru Mitoma 24/25 Season Analysis",
   } as Text,
 
   lead: {
@@ -27,7 +27,7 @@ export const mitoma2425 = {
       "もっとも、このファーストタッチの巧みさは、残念ながら、一般に公開されているデータ指標から直接判断できるものではない。\n" +
       "では三苫の選手としての特徴は、データ上どのように表れているのだろうか。\n" +
       "プレミアリーグ上位8クラブの類似した役割を担った選手と比較しながら振り返る。",
-    en: "",
+    en: "Mitoma at Brighton is best known for his explosive dribbling and 1v1 threat.",
   } as Text,
 
   blocks: [
