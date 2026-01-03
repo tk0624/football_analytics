@@ -52,7 +52,7 @@ export default function MitomaArticle() {
                   className={styles.image}
                 />
                 {b.caption ? (
-                  <p className={styles.caption}>
+                  <p className={styles.imageCaption}>
                     {renderLines(pickText(b.caption, lang)).map((line, i) => (
                       <span key={i}>
                         {line}

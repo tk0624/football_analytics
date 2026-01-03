@@ -115,40 +115,39 @@ export const mitoma2425 = {
       type: "p",
       text: {
         ja:
-          "インターセプトやタックル数の多さは、三苫の守備意識の高さを物語っている。\n" +
-          "決して守備強度の高いタイプではないが、常に適切なポジションを取ろうとし、隙あらば相手からボールを奪う姿勢はチームの守備を助けている。\n" +
-          "先発時のプレー時間が比較的長いことからも、試合展開によらず守備的なバランスを保つ上で、ヒュルツェラー監督からの信頼が非常に高かったと言える。",
-        en: "",
+            "インターセプトやタックル数の多さは、三苫の守備意識の高さを端的に示している。\n" +
+            "決して対人守備の強度で勝負するタイプではないものの、常に適切なポジションを意識し、タイミングを見てボールを奪いにいく姿勢は、チーム全体の守備バランスを支えている。\n" +
+            "先発時のプレー時間が比較的長いことからも、試合展開に左右されず守備面での安定感をもたらす存在として、ヒュルツェラー監督から高い信頼を得ていたことがうかがえる。",
+        en:
+            "The high numbers of interceptions and tackles clearly reflect Mitoma’s strong defensive awareness.\n" +
+            "While he is not a winger who relies on physical intensity in duels, his consistent positioning and willingness to step in at the right moment help maintain the team’s defensive balance.\n" +
+            "The relatively long minutes he logged when starting also suggest that head coach Hürzeler placed significant trust in Mitoma as a player who could provide defensive stability regardless of match context.",
       },
     },
     {
       type: "p",
       text: {
         ja:
-          "また、空中戦の勝率が高く、サイドアタッカーとしては意外性のある強みとなっている。\n" +
-          "身長は決して高くはないが、空間把握能力とジャンプのタイミングの良さによるもので、良く観戦しているファンほど気づく「隠れた武器」と言える。",
-        en: "",
+            "さらに、空中戦の勝率が高い点も、サイドアタッカーとしては意外性のある特徴だ。\n" +
+            "身長が特別高いわけではないが、優れた空間把握能力とジャンプのタイミングによって補っており、熱心に試合を見ているファンほど気づきやすい「隠れた強み」と言える。",
+        en:
+            "In addition, Mitoma’s aerial duel success rate stands out as an unexpected strength for a wide attacker.\n" +
+            "Although he is not particularly tall, this is compensated for by his spatial awareness and well-timed jumps, making it a ‘hidden weapon’ that is more readily noticed by attentive viewers.",
       },
     },
 
-    { type: "h2", text: { ja: "総合評価と位置づけ", en: "" } },
+    { type: "h2", text: { ja: "まとめ", en: "Summary" } },
     {
       type: "p",
       text: {
         ja:
-          "三苫は個人で突破できるスキルやスピードを持ちながらも、チームとしてより高い確度を求める典型的な「ドリブラー型ウインガー」とは一線を画し、\n" +
-          "攻撃に加えて守備や空中戦でも存在感を発揮する「バランス型」のプロファイルを確立した。\n" +
-          "上位クラブの同ポジション選手と比較しても、攻撃面だけに依存せず、守備や試合全体への関与度で際立っている。",
-        en: "",
-      },
-    },
-    {
-      type: "p",
-      text: {
-        ja:
-          "24/25シーズンの三苫を要約すれば、「派手さよりも堅実さ、そして守備貢献」。\n" +
-          "このスタイルはチーム戦術にフィットし、攻守両面で不可欠な存在へと進化したことを示している。",
-        en: "",
+            "三苫は個人で局面を打開できるスキルとスピードを備えながらも、単純に仕掛けの回数で勝負する典型的な「ドリブラー型ウインガー」とは一線を画している。\n" +
+            "攻撃にとどまらず、守備や空中戦を含めて試合全体に関与しており、「バランス型」のプロファイルを確立している。\n" +
+            "上位クラブの同ポジションの選手と比較しても、攻撃面だけに依存せず、守備貢献や試合への関与度という点で際立った存在と言える。",
+        en:
+            "While Mitoma possesses the skill and pace to beat opponents individually, he clearly differs from the archetypal ‘dribbler-type’ winger who relies primarily on volume of take-ons.\n" +
+            "By contributing not only in attack but also in defense and aerial situations, he has established a well-balanced player profile with strong involvement across all phases of the game.\n" +
+            "Even when compared with players in similar positions at top clubs, Mitoma stands out for his ability to impact matches without relying solely on attacking output, particularly through his defensive contribution and overall involvement.",
       },
     },
   ] as ArticleBlock[],

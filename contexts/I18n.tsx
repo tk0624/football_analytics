@@ -25,17 +25,11 @@ const dictionary: Dict = {
   // トップページ
   homeTitle: { ja: "Samurai Metrics", en: "Samurai Metrics"},
   homeLead: {
-    ja: "海外で活躍する日本人選手の“見えにくい貢献”を可視化。",
+    ja: "海外で活躍する日本人サッカー選手の“見えにくい貢献”を可視化。",
     en: "Revealing the ‘hidden’ contributions of Japanese players in Europe."
   },
   ctaReadMitoma: { ja: "三笘 24-25 分析を読む", en: "Read Mitoma 24-25 Review" },
 
-  // 記事（見出し／リード例）
-  artMitomaTitle: { ja: "三笘薫 24-25：キャリーと創造性のシナジー", en: "Kaoru Mitoma 24-25: Carries & Creation" },
-  artMitomaLead: {
-    ja: "G/Aに加え、キャリー・1/3侵入・被圧下の前進と守備貢献を分解。",
-    en: "Beyond G/A, we decompose carries, final-third entries, pressured progression and defensive value."
-  },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
