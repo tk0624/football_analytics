@@ -17,17 +17,27 @@ export const mitoma2425 = {
 
   lead: {
     ja:
-      "ブライトンの三苫薫といえば、鋭いドリブルや突破力がまず思い浮かぶだろう。\n" +
-      "ただ、今シーズンを含む直近数シーズンの試合を見ていると、（怪我やコンディションの影響はあるだろうが）以前ほど無理に仕掛ける場面は多くない。\n" +
-      "それでも、相手選手やブライトンファンにとって、三苫の存在感が薄れた印象はない。\n" +
-      "24/25シーズンプレミアリーグにおいても、10ゴール4アシストを記録、ゴール関与という最もわかりやすい指標で結果を残した。\n" +
-      "また、ボールを受けた瞬間から複数の相手選手が、突破を恐れてマークにつくのは依然として恒例のシーンだ。\n" +
-      "この背景にあるのが、ファーストタッチの質だ。ロングボールや速い縦パスに対しても、1,2タッチで体制を整え、相手にとってリスクの高い位置にボールを置く。これが寄せるタイミングそのものを失わせている。\n" +
-      "チェルシー戦(2025年2月15日)での、GKからのロングボールを流れるようにセンセーショナルなゴールは象徴的なシーンと言える。\n\n" +
-      "もっとも、このファーストタッチの巧みさは、残念ながら、一般に公開されているデータ指標から直接判断できるものではない。\n" +
-      "では三苫の選手としての特徴は、データ上どのように表れているのだろうか。\n" +
-      "プレミアリーグ上位8クラブの類似した役割を担った選手と比較しながら振り返る。",
-    en: "Mitoma at Brighton is best known for his explosive dribbling and 1v1 threat.",
+        "ブライトンの三苫薫といえば、鋭いドリブルや突破力をまず思い浮かべる人が多いだろう。\n" +
+        "しかし、今シーズンを含む直近数シーズンの試合を振り返ると、怪我やコンディションの影響はあるにせよ、以前のように無理に仕掛ける場面は明らかに減っている。\n" +
+        "それでも、相手選手やブライトンのサポーターにとって、三苫の存在感が薄れたという印象はほとんどない。\n" +
+        "実際、24/25シーズンのプレミアリーグでは10ゴール4アシストを記録し、ゴール関与という最も分かりやすい指標で結果を残している。\n" +
+        "また、ボールを受けた瞬間から複数の相手選手が、突破を警戒して素早くマークに寄せる光景は、今季も頻繁に見られた。\n" +
+        "その背景にある要素の一つが、三苫のファーストタッチの質である。ロングボールや鋭い縦パスに対しても、1〜2タッチで体勢を整え、相手にとってリスクの高い位置にボールを置くことで、寄せるタイミングそのものを奪っている。\n" +
+        "2025年2月15日のチェルシー戦で見せた、GKからのロングボールを流れるようにコントロールし、そのままゴールへとつなげた一連のプレーは、この特徴を象徴するシーンと言える。\n\n" +
+        "もっとも、このファーストタッチの巧みさは、残念ながら一般に公開されているデータ指標から直接捉えることは難しい。\n" +
+        "では、三苫の選手としての特徴は、データ上ではどのように表れているのだろうか。\n" +
+        "本稿では、プレミアリーグ上位8クラブで類似した役割を担うウインガーと比較しながら、その特徴を読み解いていく。",
+    en:
+        "Kaoru Mitoma at Brighton is widely associated with explosive dribbling and one-on-one attacking ability.\n" +
+        "However, when looking back at matches from the past few seasons, including the current campaign, it is clear that he now forces individual take-ons far less frequently than before, partly due to injuries and physical condition.\n" +
+        "Even so, there has been little sense that Mitoma’s presence has diminished for either opposing defenders or Brighton supporters.\n" +
+        "In fact, during the 2024/25 Premier League season, he recorded 10 goals and 4 assists, delivering tangible output in the most straightforward metric of attacking contribution.\n" +
+        "Moreover, scenes in which multiple defenders immediately close him down upon his first touch, wary of his ability to break through, have remained a common sight this season.\n" +
+        "One key factor behind this is the quality of Mitoma’s first touch. Even when receiving long balls or fast vertical passes, he is able to set his body with one or two touches and place the ball in areas that pose high risk for defenders, effectively denying them the timing to step in.\n" +
+        "His goal against Chelsea on February 15, 2025 — controlling a long ball from the goalkeeper in one fluid motion before finishing — stands as a symbolic example of this trait.\n\n" +
+        "That said, such excellence in first touch is unfortunately difficult to capture directly through publicly available data metrics.\n" +
+        "So how, then, do Mitoma’s characteristics as a player appear when viewed through data?\n" +
+        "In this article, we examine his profile by comparing him with wingers performing similar roles at top-eight Premier League clubs.",
   } as Text,
 
   blocks: [
@@ -62,7 +72,7 @@ export const mitoma2425 = {
       },
     },
 
-    { type: "h2", text: { ja: "攻撃面での特徴", en: "" } },
+    { type: "h2", text: { ja: "攻撃面での特徴", en: "Attacking profile" } },
     {
       type: "p",
       text: {
@@ -71,26 +81,33 @@ export const mitoma2425 = {
           "これは、もっとゴールを挙げられたとも言えるが、相手にとっては危険な存在であったことも事実だ。\n" +
           "例えば、「右からのクロスにギリギリで飛び込む」、「スルーパスに抜け出してシュート」などが、ゴールを脅かした印象的なシーンとして挙げられる。 \n" +
           "特に24/25シーズンからはスピードに定評のあるヤンクバ・ミンテと両翼を担い、多くのチャンスを創出している。",
-        en: "",
+        en:
+          "While Mitoma recorded a relatively high xG, the data also suggests that he missed several big chances.\n" +
+          "This can be interpreted in two ways: he could have scored more goals, but at the same time, he consistently positioned himself as a dangerous attacking threat for opponents.\n" +
+          "Typical examples include late runs to meet crosses from the right flank and shots after breaking through the defensive line via through balls.\n" +
+          "Notably, from the 2024/25 season onward, Mitoma has often operated on the opposite wing to the pacey Yankuba Minteh, a pairing that has helped generate a large number of attacking opportunities.",
       },
     },
     {
       type: "p",
       text: {
         ja:
-          "ドリブルやクロスの試行回数は、他のウインガーに比べると突出した数値ではない。\n" +
-          "例えば、ドリブルではドク、クロスではマルティネリやネトの貢献が目立つ。\n" +
-          "これは、三苫が、やや成功率の劣る突破やクロスよりも、「チームとしての崩し」を優先してプレー選択する傾向が高いことが窺える。\n" +
-          "事実、近年ドリブル突破は意図的に抑えていることを三苫自身インタビューでも述べている。",
-        en: "",
-      },
+          "ドリブルやクロスの試行回数は、他のウインガーと比較すると突出した数値ではない。\n" +
+          "例えば、ドリブルではドク、クロスではマルティネッリやネトの方が、より積極的に関与していることが分かる。\n" +
+          "これは三苫が、成功率の低い個人突破や無理なクロスを選択するよりも、味方との連携を重視した「チームとしての崩し」を優先していることを示唆している。\n" +
+          "実際、近年はドリブル突破の回数を意図的に抑えていることを、三苫自身もインタビューの中で語っている。",
+        en:
+          "The volume of Mitoma’s dribbles and crosses is not particularly high when compared with other wingers.\n" +
+          "For instance, Doku is more prominent in terms of dribble attempts, while Martinelli and Neto are more heavily involved in crossing.\n" +
+          "This indicates that Mitoma tends to prioritize combination play within the team rather than forcing individual take-ons or attempting low-percentage crosses.\n" +
+          "In fact, Mitoma himself has mentioned in interviews that he has deliberately reduced the number of dribble attempts in recent seasons.",
+        },
     },
-
     {
       type: "image",
       src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_comparison.png",
       alt: { ja: "三苫 vs 比較 レーダーチャート", en: "" },
-      caption: { ja: "各指標比較 三苫 vs ドク、マルティネリ 24/25シーズン", en: "" },
+      caption: { ja: "三苫 vs ドク、マルティネリ 24/25シーズン", en: "" },
     },
 
     { type: "h2", text: { ja: "守備面での特徴", en: "" } },
