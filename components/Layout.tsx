@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/" className={styles.menuLink}>
             {t("navHome")}
           </Link>
-          <Link href="/article_250922_mitoma/" className={styles.menuLink}>
+          <Link href="/article_mitoma-2024-25/" className={styles.menuLink}>
             {t("navArticles")}
           </Link>
           <a href="/contact.html" className={styles.menuLink}>
