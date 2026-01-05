@@ -1,4 +1,4 @@
-// pages\article_250922_mitoma.tsx
+// pages\article_mitoma-2024-25.tsx
 import Layout from "../components/Layout";
 import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";

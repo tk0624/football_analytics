@@ -31,7 +31,7 @@ const dictionary: Dict = {
 
   // 記事CTA
   ctaReadMitoma: {
-    ja: "三苫 24-25 シーズン分析を読む",
+    ja: "三苫 24-25シーズン分析を読む",
     en: "Read Mitoma 2024/25 Analysis"
   },
 

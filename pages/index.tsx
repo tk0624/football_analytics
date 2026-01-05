@@ -22,7 +22,7 @@ export default function Home() {
           <h1>{t("homeTitle")}</h1>
           <p>{t("homeLead")}</p>
           <div className={styles.ctaRow}>
-            <a href="./article_250922_mitoma/" className={styles.ctaPrimary}>
+            <a href="./article_mitoma-2024-25/" className={styles.ctaPrimary}>
               {t("ctaReadMitoma")}
             </a>
           </div>

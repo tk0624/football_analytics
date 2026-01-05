@@ -9,7 +9,7 @@ export type ArticleBlock =
   | { type: "image"; src: string; alt: Text; caption?: Text };
 
 export const mitoma2425 = {
-  slug: "article_250922_mitoma",
+  slug: "article_mitoma-2024-25",
   title: {
     ja: "三苫薫 24/25シーズン分析",
     en: "Kaoru Mitoma 24/25 Season Analysis",
