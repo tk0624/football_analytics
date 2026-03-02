@@ -29,16 +29,28 @@ const dictionary: Dict = {
     en: "Examining the less visible contributions of Japanese players overseas."
   },
 
-  // 記事CTA
-  ctaReadMitoma: {
-    ja: "三苫 24-25シーズン分析を読む",
-    en: "Read Mitoma 2024/25 Analysis"
-  },
+  // 記事一覧セクション
+  sectionArticles: { ja: "分析記事", en: "Analysis" },
 
-  ctaReadArticle2: {
-    ja: "記事2",
-    en: "Article2"
+  // 三苫記事カード
+  cardMitomaTag:   { ja: "24/25 シーズンレビュー", en: "2024/25 Season Review" },
+  cardMitomaTitle: { ja: "三苫薫", en: "Kaoru Mitoma" },
+  cardMitomaTeam:  { ja: "ブライトン", en: "Brighton" },
+  cardMitomaDesc:  {
+    ja: "ドリブル一辺倒ではない\"バランス型\"の実像を、同ポジションとの比較データで読み解く。",
+    en: "Data reveals a balanced profile beyond the dribbler stereotype."
   },
+  cardMitomaRead:  { ja: "分析を読む", en: "Read analysis" },
+
+  // 鎌田記事カード
+  cardKamadaTag:   { ja: "25/26 シーズン分析", en: "2025/26 Season Analysis" },
+  cardKamadaTitle: { ja: "鎌田大地", en: "Daichi Kamada" },
+  cardKamadaTeam:  { ja: "クリスタルパレス", en: "Crystal Palace" },
+  cardKamadaDesc:  {
+    ja: "0ゴールの裏に隠れた守備貢献とチャンス創出を、MF比較データで可視化する。",
+    en: "Visualising defensive output and chance creation behind zero goals."
+  },
+  cardKamadaRead:  { ja: "分析を読む", en: "Read analysis" },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
