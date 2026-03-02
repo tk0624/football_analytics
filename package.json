@@ -1,8 +1,1 @@
-{
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "deploy": "npm run build && npm run postexport",
-  "postexport": "node -e \"require('fs').closeSync(require('fs').openSync('docs/.nojekyll','w'))\""
-}
-}
+{"scripts":{"dev":"next dev","build":"next build","deploy":"npm run build && npm run postexport","postexport":"node -e \"require('fs').closeSync(require('fs').openSync('docs/.nojekyll','w'))\""},"dependencies":{"@types/react":"^18.3.28","@types/react-dom":"^18.3.7","next":"^15.5.12","plotly.js-dist-min":"^3.4.0","react":"^18.3.1","react-dom":"^18.3.1","react-plotly.js":"^2.6.0"},"devDependencies":{"@types/node":"25.3.3","@types/react-plotly.js":"^2.6.4","typescript":"5.9.3"}}

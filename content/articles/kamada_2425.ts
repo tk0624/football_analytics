@@ -27,12 +27,8 @@ export const kamada2425 = {
   blocks: [
     // ── チャート①：全指標レーダー ──────────────────────────────
     {
-      type: "image",
-      src: "/images/articles/radar_chart_kamada.png",
-      alt: {
-        ja: "鎌田 25/26シーズン レーダーチャート",
-        en: "Daichi Kamada 25/26 Season Radar Chart",
-      },
+      type: "chart",
+      chartKey: "radar_kamada_all",
       caption: {
         ja:
           "鎌田の25/26シーズンにおける各指標（0〜5スケール、比較選手と正規化）\n\n" +
@@ -75,12 +71,8 @@ export const kamada2425 = {
 
     // ── チャート②：絞り込み比較レーダー ───────────────────────
     {
-      type: "image",
-      src: "/images/articles/radar_chart_kamada_comparison.png",
-      alt: {
-        ja: "鎌田 vs 比較 レーダーチャート",
-        en: "Kamada vs Comparison Radar Chart",
-      },
+      type: "chart",
+      chartKey: "radar_kamada_cmp",
       caption: {
         ja: "vs ティールマンス、グラフェンベルフ 25/26シーズン",
         en: "vs Tielemans, Gravenberch for the 2025/26 season",

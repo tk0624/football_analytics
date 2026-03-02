@@ -6,7 +6,8 @@ type Text = { ja: string; en?: string };
 export type ArticleBlock =
   | { type: "h2"; text: Text }
   | { type: "p"; text: Text }
-  | { type: "image"; src: string; alt: Text; caption?: Text };
+  | { type: "image"; src: string; alt: Text; caption?: Text }
+  | { type: "chart"; chartKey: string; caption?: Text };
 
 export const mitoma2425 = {
   slug: "article_mitoma-2024-25",

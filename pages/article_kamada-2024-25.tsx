@@ -4,6 +4,15 @@ import Layout from "../components/Layout";
 import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";
 import { kamada2425, pickText, renderLines } from "../content/articles/kamada_2425";
+import PlotlyChart from "../components/PlotlyChart";
+import radarAllJson from "../public/charts/radar_kamada_all.json";
+import radarCmpJson from "../public/charts/radar_kamada_cmp.json";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const chartMap: Record<string, { data: any[]; layout: any }> = {
+  radar_kamada_all: radarAllJson as { data: any[]; layout: any },
+  radar_kamada_cmp: radarCmpJson as { data: any[]; layout: any },
+};
 
 export default function KamadaArticle() {
   const { lang } = useI18n();
@@ -42,6 +51,20 @@ export default function KamadaArticle() {
                   </span>
                 ))}
               </p>
+            );
+          }
+
+          if (b.type === "chart") {
+            const chart = chartMap[b.chartKey];
+            if (!chart) return null;
+            return (
+              <PlotlyChart
+                key={idx}
+                data={chart.data}
+                layout={chart.layout}
+                caption={b.caption ? pickText(b.caption, lang) : undefined}
+                lang={lang}
+              />
             );
           }
 
