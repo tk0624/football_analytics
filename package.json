@@ -2,9 +2,7 @@
 "scripts": {
   "dev": "next dev",
   "build": "next build",
-  "export": "next export",
-  "deploy": "npm run build && npm run export && npm run postexport",
-  "postexport": 
-  "echo > docs/.nojekyll"
+  "deploy": "npm run build && npm run postexport",
+  "postexport": "node -e \"require('fs').closeSync(require('fs').openSync('docs/.nojekyll','w'))\""
 }
 }

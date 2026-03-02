@@ -27,7 +27,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/article_mitoma-2024-25/" className={styles.menuLink}>
             {t("navArticles")}
           </Link>
-          <a href="/contact.html" className={styles.menuLink}>
+          <a
+            href="https://github.com/tk0624/football_analytics/issues"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.menuLink}
+          >
             {t("navContact")}
           </a>
         </nav>
