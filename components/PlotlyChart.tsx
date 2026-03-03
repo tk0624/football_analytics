@@ -27,6 +27,19 @@ const DEFAULT_METRICS = new Set([
   "AerialWin_pct",
 ]);
 
+// ── 色パレット: index 0 = 主役選手（骮色）、以降は比較選手───────────────
+const PLAYER_COLORS = [
+  "#F5C842", // 黄金（主役）
+  "#60AFFF", // スカイブルー
+  "#FF7B7B", // コーラルレッド
+  "#6EE6A0", // ミントグリーン
+  "#FFB347", // オレンジ
+  "#C77DFF", // ラベンダー
+  "#4DD9E8", // トール
+  "#FF9FBF", // ピンク
+  "#B8E04A", // 黄緑
+];
+
 // ── メトリクス名の日英ラベルマップ ──────────────────────────────────
 const LABEL_MAP: Record<string, { ja: string; en: string }> = {
   Goals_Per90:              { ja: "ゴール /90",         en: "Goals /90" },
@@ -122,22 +135,31 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   });
 
   const filteredData = useMemo(() => {
-    return data.map((trace) => {
+    // defaultPlayers を先頭に並べ替えて色を順番に割り当て
+    const dp = new Set(defaultPlayers ?? []);
+    const sorted = [
+      ...data.filter((t) => dp.has(t.name)),
+      ...data.filter((t) => !dp.has(t.name)),
+    ];
+    return sorted.map((trace, colorIdx) => {
       const theta: string[] = trace.theta ?? [];
       const r: number[] = trace.r ?? [];
       const indices = theta.reduce<number[]>((acc, m, i) => {
         if (selected.has(m)) acc.push(i);
         return acc;
       }, []);
+      const color = PLAYER_COLORS[colorIdx % PLAYER_COLORS.length];
       return {
         ...trace,
         theta: indices.map((i) => theta[i]),
         r: indices.map((i) => r[i]),
+        line: { ...(trace.line ?? {}), color },
+        marker: { ...(trace.marker ?? {}), color },
         // プレイヤー選択状態を維持
         visible: hiddenPlayers.has(trace.name) ? "legendonly" : true,
       };
     });
-  }, [data, selected, hiddenPlayers]);
+  }, [data, selected, hiddenPlayers, defaultPlayers]);
 
   // 凡例クリックでプレイヤー表示切替（メトリクス変更時も維持）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
