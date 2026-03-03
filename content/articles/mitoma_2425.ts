@@ -7,7 +7,7 @@ export type ArticleBlock =
   | { type: "h2"; text: Text }
   | { type: "p"; text: Text }
   | { type: "image"; src: string; alt: Text; caption?: Text }
-  | { type: "chart"; chartKey: string; caption?: Text };
+  | { type: "chart"; chartKey: string; caption?: Text; defaultPlayers?: string[] };
 
 export const mitoma2425 = {
   slug: "article_mitoma-2024-25",

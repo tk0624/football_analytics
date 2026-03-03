@@ -1,9 +1,22 @@
 // components/PlotlyChart.tsx
 import dynamic from "next/dynamic";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import styles from "../styles/Article.module.css";
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
+
+// ── デフォルト表示スタッツ（9項目）───────────────────────────────
+const DEFAULT_METRICS = new Set([
+  "xG_Per90",
+  "xA_Per90",
+  "BigChancesCreated_Per90",
+  "GroundDuelsWon_pg_Per90",
+  "AerialWin_pct",
+  "LongBallAcc_pct",
+  "CrossAcc_pct",
+  "Interceptions_Per90",
+  "Tackles_Per90",
+]);
 
 // ── メトリクス名の日英ラベルマップ ──────────────────────────────────
 const LABEL_MAP: Record<string, { ja: string; en: string }> = {
@@ -74,16 +87,29 @@ interface PlotlyChartProps {
   layout: any;
   caption?: string;
   lang?: "ja" | "en";
+  /** 初期表示する選手名。未指定時は全展示 */
+  defaultPlayers?: string[];
 }
 
-export default function PlotlyChart({ data, layout, caption, lang = "ja" }: PlotlyChartProps) {
+export default function PlotlyChart({ data, layout, caption, lang = "ja", defaultPlayers }: PlotlyChartProps) {
   const allMetrics: string[] = useMemo(() => {
     const firstTrace = data[0] as { theta?: string[] } | undefined;
     return firstTrace?.theta ?? [];
   }, [data]);
 
-  const [selected, setSelected] = useState<Set<string>>(() => new Set(allMetrics));
+  // デフォルトは DEFAULT_METRICS のうチチャートに存在する項目のみ
+  const [selected, setSelected] = useState<Set<string>>(
+    () => new Set(allMetrics.filter((m) => DEFAULT_METRICS.has(m)))
+  );
   const [panelOpen, setPanelOpen] = useState(false);
+
+  // defaultPlayers の未指定時は全展示、指定時はそれ以外を非表示
+  const [hiddenPlayers, setHiddenPlayers] = useState<Set<string>>(() => {
+    if (!defaultPlayers || defaultPlayers.length === 0) return new Set<string>();
+    const dp = new Set(defaultPlayers);
+    const allPlayers: string[] = data.map((t: { name?: string }) => t.name ?? "").filter(Boolean);
+    return new Set(allPlayers.filter((p) => !dp.has(p)));
+  });
 
   const filteredData = useMemo(() => {
     return data.map((trace) => {
@@ -93,9 +119,42 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja" }: Plot
         if (selected.has(m)) acc.push(i);
         return acc;
       }, []);
-      return { ...trace, theta: indices.map((i) => theta[i]), r: indices.map((i) => r[i]) };
+      return {
+        ...trace,
+        theta: indices.map((i) => theta[i]),
+        r: indices.map((i) => r[i]),
+        // プレイヤー選択状態を維持
+        visible: hiddenPlayers.has(trace.name) ? "legendonly" : true,
+      };
     });
-  }, [data, selected]);
+  }, [data, selected, hiddenPlayers]);
+
+  // 凡例クリックでプレイヤー表示切替（メトリクス変更時も維持）
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleLegendClick = useCallback((e: any) => {
+    const name: string | undefined = e?.data?.[e.curveNumber]?.name;
+    if (!name) return undefined;
+    setHiddenPlayers((prev) => {
+      const next = new Set(prev);
+      next.has(name) ? next.delete(name) : next.add(name);
+      return next;
+    });
+    return false; // Plotlyデフォルト動作をキャンセル
+  }, []);
+
+  // 凡例ダブルクリック：そのプレイヤーだけ表示
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleLegendDoubleClick = useCallback((e: any) => {
+    const name: string | undefined = e?.data?.[e.curveNumber]?.name;
+    if (!name) return undefined;
+    const allPlayers: string[] = data.map((t) => t.name);
+    setHiddenPlayers((prev) => {
+      const isIsolated = prev.size === allPlayers.length - 1 && !prev.has(name);
+      if (isIsolated) return new Set(); // 全員表示に戻す
+      return new Set(allPlayers.filter((p) => p !== name));
+    });
+    return false;
+  }, [data]);
 
   const toggle = (m: string) => {
     setSelected((prev) => {
@@ -121,6 +180,18 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja" }: Plot
     autosize: true,
     paper_bgcolor: "transparent",
     plot_bgcolor: "transparent",
+    // 凡例をチャート下部に横並び配置 → スマホでも重ならない
+    legend: {
+      ...(layout.legend ?? {}),
+      orientation: "h" as const,
+      x: 0.5,
+      y: -0.15,
+      xanchor: "center" as const,
+      yanchor: "top" as const,
+      font: { size: 11 },
+    },
+    // 凡例分の下マージンを確保
+    margin: { t: 40, b: 120, l: 20, r: 20 },
   };
 
   const activeGroups = GROUPS.map((g) => ({
@@ -132,7 +203,8 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja" }: Plot
   const otherMetrics = allMetrics.filter((m) => !knownMetrics.has(m));
 
   return (
-    <div className={styles.imageWrapper}>
+    // imageWrapper ではなく独自ラッパーを使い、前後テキストとの被りを防ぐ
+    <div className={styles.chartSection}>
       {/* ── メトリクス選択パネル ── */}
       <div className={styles.metricPanel}>
         <button className={styles.metricToggleBtn} onClick={() => setPanelOpen((v) => !v)}>
@@ -200,12 +272,16 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja" }: Plot
       </div>
 
       {/* ── Plotly チャート ── */}
-      <Plot
-        data={filteredData}
-        layout={mergedLayout}
-        config={{ responsive: true, displayModeBar: false }}
-        style={{ width: "100%", height: "100%" }}
-      />
+      <div className={styles.plotWrapper}>
+        <Plot
+          data={filteredData}
+          layout={mergedLayout}
+          config={{ responsive: true, displayModeBar: false }}
+          style={{ width: "100%", height: "100%" }}
+          onLegendClick={handleLegendClick}
+          onLegendDoubleClick={handleLegendDoubleClick}
+        />
+      </div>
 
       {caption && (
         <p className={styles.imageCaption}>

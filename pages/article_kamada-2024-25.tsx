@@ -64,6 +64,7 @@ export default function KamadaArticle() {
                 layout={chart.layout}
                 caption={b.caption ? pickText(b.caption, lang) : undefined}
                 lang={lang}
+                defaultPlayers={b.defaultPlayers}
               />
             );
           }

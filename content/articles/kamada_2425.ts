@@ -29,9 +29,10 @@ export const kamada2425 = {
     {
       type: "chart",
       chartKey: "radar_kamada_all",
+      defaultPlayers: ["Daichi Kamada"],
       caption: {
         ja:
-          "鎌田の25/26シーズンにおける各指標（0〜5スケール、比較選手と正規化）\n\n" +
+          "鎌田の25/26シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
           "比較用にピックアップした選手\n" +
           "マルティン・スビメンディ（アーセナル）\n" +
           "ロドリ（マンチェスター・シティ）\n" +
