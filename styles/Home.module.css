@@ -44,7 +44,8 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 48px;
 
   padding: 0 28px;
   margin-bottom: 32px;

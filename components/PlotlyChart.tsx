@@ -180,6 +180,16 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     autosize: true,
     paper_bgcolor: "transparent",
     plot_bgcolor: "transparent",
+    // ズーム・回転を禁止
+    dragmode: false as const,
+    // ラベルが切れないよう polar angularaxis フォントを小さめに
+    polar: {
+      ...((layout as any).polar ?? {}),
+      angularaxis: {
+        ...(((layout as any).polar as any)?.angularaxis ?? {}),
+        tickfont: { size: 8 },
+      },
+    },
     // 凡例をチャート下部に横並び配置 → スマホでも重ならない
     legend: {
       ...(layout.legend ?? {}),
@@ -190,8 +200,8 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
       yanchor: "top" as const,
       font: { size: 11 },
     },
-    // 凡例分の下マージンを確保
-    margin: { t: 40, b: 120, l: 20, r: 20 },
+    // 左右マージンを広げてラベルのクリップを防ぐ
+    margin: { t: 40, b: 120, l: 40, r: 40 },
   };
 
   const activeGroups = GROUPS.map((g) => ({
@@ -276,7 +286,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
         <Plot
           data={filteredData}
           layout={mergedLayout}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, scrollZoom: false }}
           style={{ width: "100%", height: "100%" }}
           onLegendClick={handleLegendClick}
           onLegendDoubleClick={handleLegendDoubleClick}
