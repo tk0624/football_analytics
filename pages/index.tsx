@@ -43,7 +43,7 @@ export default function Home() {
           </Link>
 
           {/* 鎌田記事 */}
-          <Link href="/article_kamada-2024-25/" className={styles.articleCard}>
+          <Link href="/article_kamada-2025-26/" className={styles.articleCard}>
             <span className={styles.cardTag}>{t("cardKamadaTag")}</span>
             <div className={styles.cardMeta}>
               <span className={styles.cardPlayer}>{t("cardKamadaTitle")}</span>

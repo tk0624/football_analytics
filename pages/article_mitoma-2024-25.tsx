@@ -1,11 +1,22 @@
-// pages\article_mitoma-2024-25.tsx
+// pages/article_mitoma-2024-25.tsx
+import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";
 import { mitoma2425, pickText, renderLines } from "../content/articles/mitoma_2425";
+import PlotlyChart from "../components/PlotlyChart";
+import radarAllJson from "../public/charts/radar_mitoma_all.json";
+import radarCmpJson from "../public/charts/radar_mitoma_cmp.json";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const chartMap: Record<string, { data: any[]; layout: any }> = {
+  radar_mitoma_all: radarAllJson as { data: any[]; layout: any },
+  radar_mitoma_cmp: radarCmpJson as { data: any[]; layout: any },
+};
 
 export default function MitomaArticle() {
   const { lang } = useI18n();
+  const { basePath } = useRouter();
 
   return (
     <Layout>
@@ -43,11 +54,27 @@ export default function MitomaArticle() {
             );
           }
 
+          if (b.type === "chart") {
+            const chart = chartMap[b.chartKey];
+            if (!chart) return null;
+            return (
+              <PlotlyChart
+                key={idx}
+                data={chart.data}
+                layout={chart.layout}
+                caption={b.caption ? pickText(b.caption, lang) : undefined}
+                lang={lang}
+                defaultPlayers={b.defaultPlayers}
+              />
+            );
+          }
+
           if (b.type === "image") {
+            const imgSrc = b.src.startsWith("/") ? `${basePath}${b.src}` : b.src;
             return (
               <div key={idx} className={styles.imageWrapper}>
                 <img
-                  src={b.src}
+                  src={imgSrc}
                   alt={pickText(b.alt, lang)}
                   className={styles.image}
                 />

@@ -42,16 +42,14 @@ export const mitoma2425 = {
   } as Text,
 
   blocks: [
+    // ── チャート①：全指標レーダー ──────────────────────────────
     {
-      type: "image",
-      src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_mitoma.png",
-      alt: { 
-        ja: "三苫 24/25シーズン レーダーチャート",
-        en: "",
-      },
+      type: "chart",
+      chartKey: "radar_mitoma_all",
+      defaultPlayers: ["Kaoru Mitoma"],
       caption: {
         ja:
-          "三苫の24/25シーズンにおける攻撃・守備・比較指標\n\n" +
+          "三苫の24/25シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
           "比較用にピックアップした選手\n" +
           "ジェレミー・ドク（マンチェスター・シティ）\n" +
           "ガブリエウ・マルティネッリ（アーセナル）\n" +
@@ -60,8 +58,8 @@ export const mitoma2425 = {
           "ハーヴィー・バーンズ（ニューカッスル・ユナイテッド）\n" +
           "ジェイドン・サンチョ（チェルシー）\n" +
           "カラム・ハドソン＝オドイ（ノッティンガム・フォレスト）",
-        en: 
-          "Radar chart of Kaoru Mitoma's attacking, defensive, and comparative metrics for the 2024/25 season.\n\n" +
+        en:
+          "Radar chart of Kaoru Mitoma's metrics for the 2024/25 season (scaled 0–5, normalised against comparison group).\n\n" +
           "Players selected for comparison:\n" +
           "Jeremy Doku (Manchester City)\n" +
           "Gabriel Martinelli (Arsenal)\n" +
@@ -104,10 +102,10 @@ export const mitoma2425 = {
           "In fact, Mitoma himself has mentioned in interviews that he has deliberately reduced the number of dribble attempts in recent seasons.",
         },
     },
+    // ── チャート②：絞り込み比較レーダー ───────────────────────
     {
-      type: "image",
-      src: "https://tk0624.github.io/football_analytics/images/articles/radar_chart_comparison.png",
-      alt: { ja: "三苫 vs 比較 レーダーチャート", en: "" },
+      type: "chart",
+      chartKey: "radar_mitoma_cmp",
       caption: { ja: "vs ドク、マルティネリ 24/25シーズン", en: "vs Doku, Martinelli for the 2024/25 season" },
     },
 

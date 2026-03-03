@@ -1,9 +1,9 @@
-// pages/article_kamada-2024-25.tsx
+// pages/article_kamada-2025-26.tsx
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";
-import { kamada2425, pickText, renderLines } from "../content/articles/kamada_2425";
+import { kamada2425, pickText, renderLines } from "../content/articles/kamada_2526";
 import PlotlyChart from "../components/PlotlyChart";
 import radarAllJson from "../public/charts/radar_kamada_all.json";
 import radarCmpJson from "../public/charts/radar_kamada_cmp.json";
