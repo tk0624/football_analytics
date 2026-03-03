@@ -65,6 +65,7 @@ export default function MitomaArticle() {
                 caption={b.caption ? pickText(b.caption, lang) : undefined}
                 lang={lang}
                 defaultPlayers={b.defaultPlayers}
+                defaultMetrics={b.defaultMetrics}
               />
             );
           }

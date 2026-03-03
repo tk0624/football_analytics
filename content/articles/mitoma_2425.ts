@@ -7,7 +7,7 @@ export type ArticleBlock =
   | { type: "h2"; text: Text }
   | { type: "p"; text: Text }
   | { type: "image"; src: string; alt: Text; caption?: Text }
-  | { type: "chart"; chartKey: string; caption?: Text; defaultPlayers?: string[] };
+  | { type: "chart"; chartKey: string; caption?: Text; defaultPlayers?: string[]; defaultMetrics?: string[] };
 
 export const mitoma2425 = {
   slug: "article_mitoma-2024-25",
@@ -47,6 +47,13 @@ export const mitoma2425 = {
       type: "chart",
       chartKey: "radar_mitoma_all",
       defaultPlayers: ["Kaoru Mitoma"],
+      defaultMetrics: [
+        "Goals_Per90", "xG_Per90", "BigChancesMissed_Per90",
+        "Assists_Per90", "xA_Per90", "BigChancesCreated_Per90",
+        "Crosses_pg_Per90", "SuccDribbles_pg_Per90",
+        "PossessionLost_Per90", "Interceptions_Per90", "Tackles_Per90",
+        "GroundWin_pct", "AerialWin_pct",
+      ],
       caption: {
         ja:
           "三苫の24/25シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
@@ -106,6 +113,13 @@ export const mitoma2425 = {
     {
       type: "chart",
       chartKey: "radar_mitoma_cmp",
+      defaultMetrics: [
+        "Goals_Per90", "xG_Per90", "BigChancesMissed_Per90",
+        "Assists_Per90", "xA_Per90", "BigChancesCreated_Per90",
+        "Crosses_pg_Per90", "SuccDribbles_pg_Per90",
+        "PossessionLost_Per90", "Interceptions_Per90", "Tackles_Per90",
+        "GroundWin_pct", "AerialWin_pct",
+      ],
       caption: { ja: "vs ドク、マルティネリ 24/25シーズン", en: "vs Doku, Martinelli for the 2024/25 season" },
     },
 

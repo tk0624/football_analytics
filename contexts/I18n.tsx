@@ -33,22 +33,22 @@ const dictionary: Dict = {
   sectionArticles: { ja: "分析記事", en: "Analysis" },
 
   // 三苫記事カード
-  cardMitomaTag:   { ja: "24/25 シーズンレビュー", en: "2024/25 Season Review" },
+  cardMitomaTag:   { ja: "24/25 シーズン分析", en: "2024/25 Season Analysis" },
   cardMitomaTitle: { ja: "三苫薫", en: "Kaoru Mitoma" },
   cardMitomaTeam:  { ja: "ブライトン", en: "Brighton" },
   cardMitomaDesc:  {
-    ja: "ドリブル一辺倒ではない\"バランス型\"の実像を、同ポジションとの比較データで読み解く。",
-    en: "Data reveals a balanced profile beyond the dribbler stereotype."
+    ja: "代名詞であるドリブル以外の貢献は？",
+    en: "What does Mitoma offer beyond his trademark dribbling?"
   },
   cardMitomaRead:  { ja: "分析を読む", en: "Read analysis" },
 
   // 鎌田記事カード
-  cardKamadaTag:   { ja: "25/26 シーズン分析", en: "2025/26 Season Analysis" },
+  cardKamadaTag:   { ja: "25/26 シーズン中分析", en: "2025/26 Mid-Season Analysis" },
   cardKamadaTitle: { ja: "鎌田大地", en: "Daichi Kamada" },
   cardKamadaTeam:  { ja: "クリスタルパレス", en: "Crystal Palace" },
   cardKamadaDesc:  {
-    ja: "0ゴールの裏に隠れた守備貢献とチャンス創出を、MF比較データで可視化する。",
-    en: "Visualising defensive output and chance creation behind zero goals."
+    ja: "月間MVPにも選ばれた貢献度は読み取れるのか？",
+    en: "Can data capture the contribution that earned him Player of the Month?"
   },
   cardKamadaRead:  { ja: "分析を読む", en: "Read analysis" },
 };

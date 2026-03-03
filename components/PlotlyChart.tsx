@@ -112,18 +112,25 @@ interface PlotlyChartProps {
   lang?: "ja" | "en";
   /** 初期表示する選手名。未指定時は全展示 */
   defaultPlayers?: string[];
+  /** 初期選択スタッツ。未指定時は DEFAULT_METRICS を使用 */
+  defaultMetrics?: string[];
 }
 
-export default function PlotlyChart({ data, layout, caption, lang = "ja", defaultPlayers }: PlotlyChartProps) {
+export default function PlotlyChart({ data, layout, caption, lang = "ja", defaultPlayers, defaultMetrics }: PlotlyChartProps) {
   const allMetrics: string[] = useMemo(() => {
     const firstTrace = data[0] as { theta?: string[] } | undefined;
     return firstTrace?.theta ?? [];
   }, [data]);
 
-  // デフォルトは DEFAULT_METRICS のうチチャートに存在する項目のみ
-  const [selected, setSelected] = useState<Set<string>>(
-    () => new Set(allMetrics.filter((m) => DEFAULT_METRICS.has(m)))
-  );
+  // デフォルトは defaultMetrics 指定時はその項目、未指定は DEFAULT_METRICS のうちチャートに存在する項目のみ
+  const effectiveDefault = useMemo(() => {
+    if (defaultMetrics && defaultMetrics.length > 0) {
+      return new Set(allMetrics.filter((m) => defaultMetrics.includes(m)));
+    }
+    return new Set(allMetrics.filter((m) => DEFAULT_METRICS.has(m)));
+  }, [allMetrics, defaultMetrics]);
+
+  const [selected, setSelected] = useState<Set<string>>(() => effectiveDefault);
   const [panelOpen, setPanelOpen] = useState(false);
 
   // defaultPlayers の未指定時は全展示、指定時はそれ以外を非表示
@@ -206,6 +213,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
 
   const selectAll = () => setSelected(new Set(allMetrics));
   const clearAll = () => setSelected(new Set());
+  const resetDefault = () => setSelected(new Set(effectiveDefault));
 
   const mergedLayout = {
     ...layout,
@@ -264,6 +272,9 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
               </button>
               <button className={styles.metricActionBtn} onClick={clearAll}>
                 {lang === "ja" ? "全解除" : "None"}
+              </button>
+              <button className={styles.metricActionBtn} onClick={resetDefault}>
+                {lang === "ja" ? "デフォルト" : "Default"}
               </button>
             </div>
 

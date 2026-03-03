@@ -7,20 +7,20 @@ type Text = { ja: string; en?: string };
 export const kamada2425 = {
   slug: "article_kamada-2025-26",
   title: {
-    ja: "鎌田大地 25/26シーズン分析",
-    en: "Daichi Kamada 25/26 Season Analysis",
+    ja: "鎌田大地 25/26シーズン中分析",
+    en: "Daichi Kamada 25/26 Mid-Season Analysis",
   } as Text,
 
   lead: {
     ja:
-      "クリスタルパレスに加入した鎌田大地は、2025/26シーズン序盤に出場機会を得ながらも、なかなか数字で結果を残せずにいた印象がある。\n" +
-      "14試合で0ゴールというスタッツは、攻撃的なポジションを担うプレイヤーとしては物足りなく映るかもしれない。\n" +
-      "しかし、ミドルサードを起点にしたビルドアップへの関与や、相手ボールを奪い返す守備貢献など、スコアに直結しない部分での存在感は少なくない。\n" +
+      "クリスタルパレスに所属する鎌田大地は、2025/26シーズンは怪我で離脱した期間以外はコンスタントに出場機会を得ているが、なかなか明確な数字として結果を残せていない印象がある。\n" +
+      "26年2月時点で、プレミアリーグで0ゴール0アシストというスタッツは物足りなく映るかもしれない。\n" +
+      "しかし、ミドルサードを起点にしたビルドアップへの関与や、相手ボールを奪い返す守備貢献など、スコアに直結しない部分での存在感は非常に大きく、グラスナー監督の信頼も厚い。\n" +
       "本稿では、プレミアリーグの同ポジション選手（ボックス・トゥ・ボックスMFおよびアンカー）と比較しながら、鎌田のプロファイルをデータで読み解いていく。",
     en:
-      "Daichi Kamada joined Crystal Palace ahead of the 2025/26 season, and while he has earned playing time in the early stages of the campaign, he has struggled to produce results in the traditional sense.\n" +
-      "Zero goals in 14 appearances may look underwhelming for a player expected to contribute in advanced areas.\n" +
-      "However, his involvement in build-up play through the middle third and his contribution to winning the ball back without it showing in the scoreline deserve closer attention.\n" +
+      "Daichi Kamada has been a consistent presence in Crystal Palace's squad throughout the 2025/26 season, earning regular starts outside of an injury-enforced absence. Yet he has struggled to produce results in the conventional sense.\n" +
+      "With zero goals and zero assists in the Premier League as of February 2026, his numbers may look underwhelming on the surface.\n" +
+      "However, his influence in areas that do not show up on the scoresheet — involvement in build-up play through the middle third and his contribution to winning the ball back — has been considerable, and he continues to hold the trust of manager Oliver Glasner.\n" +
       "In this article, we analyse Kamada's profile using data, comparing him with players in similar roles — box-to-box midfielders and anchors — in the Premier League.",
   } as Text,
 
@@ -30,6 +30,12 @@ export const kamada2425 = {
       type: "chart",
       chartKey: "radar_kamada_all",
       defaultPlayers: ["Daichi Kamada"],
+      defaultMetrics: [
+        "xG_Per90", "xA_Per90", "BigChancesCreated_Per90",
+        "LongBalls_pg_Per90", "SuccDribbles_pg_Per90",
+        "PossessionLost_Per90", "Interceptions_Per90", "Tackles_Per90",
+        "GroundWin_pct", "AerialWin_pct",
+      ],
       caption: {
         ja:
           "鎌田の25/26シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
@@ -60,13 +66,11 @@ export const kamada2425 = {
       type: "p",
       text: {
         ja:
-          "14試合でゴールは0本だが、xGは0.87とそれほど低くはなく、シュートまで至らずにチャンスを潰している場面よりも、そもそも自らフィニッシュを狙いにいくシーンが限られているとみた方が実態に近い。\n" +
-          "むしろ注目すべきはxA（1.55）とBigChancesCreated（2）の数字で、決定機を生み出すパスの配球者として機能していることが読み取れる。\n" +
-          "比較選手の中ではティールマンスやグラフェンベルフと近いポジショニングを取りながら、よりセカンドラインからの崩しに特化した役割を担っている。",
+          "ゴールやアシストはないが、xGやxAは他の同リーグの一流選手と同等であり、ペナルティ外からのミドルシュートでゴールに迫る場面があること、また決定機を生み出すパスの配球者として機能していることが読み取れる。\n" +
+          "比較選手の中では、より攻撃的な選手であるティールマンスやグラフェンベルフと同様に、セカンドラインからの崩しに特化した役割を担うことができている。",
         en:
-          "Despite zero goals in 14 matches, an xG of 0.87 is not particularly low, suggesting the issue is less about missed chances and more about the limited number of situations where Kamada actively seeks to finish.\n" +
-          "More telling are his xA (1.55) and BigChancesCreated (2), which indicate he is functioning as a provider of key passes and a creator of clear-cut opportunities.\n" +
-          "Among the comparison group, he occupies a similar profile to Tielemans and Gravenberch, leaning towards a role focused on breaking down the opposition from a deeper creative position.",
+          "Despite the absence of goals or assists, his xG and xA are on a par with top players in the same league, suggesting he has created genuine scoring opportunities through long-range efforts from outside the penalty area and has functioned as a provider of key passes that generate clear-cut chances.\n" +
+          "Among the comparison group, he is able to fulfil a role focused on breaking down the opposition from a deeper position — comparable to the more attacking profiles of Tielemans and Gravenberch.",
       },
     },
 
@@ -74,6 +78,12 @@ export const kamada2425 = {
     {
       type: "chart",
       chartKey: "radar_kamada_cmp",
+      defaultMetrics: [
+        "xG_Per90", "xA_Per90", "BigChancesCreated_Per90",
+        "LongBalls_pg_Per90", "SuccDribbles_pg_Per90",
+        "PossessionLost_Per90", "Interceptions_Per90", "Tackles_Per90",
+        "GroundWin_pct", "AerialWin_pct",
+      ],
       caption: {
         ja: "vs ティールマンス、グラフェンベルフ 25/26シーズン",
         en: "vs Tielemans, Gravenberch for the 2025/26 season",
@@ -86,28 +96,22 @@ export const kamada2425 = {
       type: "p",
       text: {
         ja:
-          "タックル数はゲームあたり2.9本で、比較グループの中でもカイセド（2.9）と並ぶ最上位に位置する。\n" +
-          "インターセプト（0.6/game）はそれほど高くないものの、積極的にボールホルダーへプレッシャーをかけ奪いにいく姿勢が数字に表れている。\n" +
-          "また、ファウルを受けた回数（1.2/game）が比較選手の中で最も多く、相手にとって止めにくい存在であることを示している。\n" +
-          "守備への貢献は数値には出にくい部分も多いが、トランジションの局面でのボール奪取という点では、明確なインパクトを残していると言える。",
+          "特筆すべきはタックル数だ。今回ピックアップした上位チームの選手の中でも守備力に定評のあるカイセドと並ぶ最上位に位置する。\n" +
+          "堅守速攻スタイルを貫くクリスタルパレスとして、中盤でのボール奪取は生命線であるが、鎌田がこの役割を見事に担っている。\n" +
+          "鎌田はキープ力にも長けているため、ボール奪取後にまた奪い返されない選択をできることも強みの一つだ。",
         en:
-          "Kamada's tackles per game (2.9) place him joint top among the comparison group, alongside Caicedo (2.9).\n" +
-          "While his interceptions (0.6/game) are not particularly high, the willingness to press aggressively and challenge for the ball is reflected in the tackled numbers.\n" +
-          "Notably, he is fouled 1.2 times per game — the highest in the comparison group — indicating that opponents find him genuinely difficult to stop legally.\n" +
-          "Though defensive contributions often go unquantified, his output in transition and ball-winning situations constitutes a clear positive impact.",
+          "His tackle numbers stand out. Among the players selected from top clubs in this comparison, he sits joint top alongside Caicedo — widely regarded as one of the best defensive midfielders in the league.\n" +
+          "For Crystal Palace, whose identity is built on defensive solidity and quick transitions, winning the ball back in midfield is essential, and Kamada has taken on that responsibility with distinction.\n" +
+          "His ability to retain possession also means that once he wins the ball, he rarely gives it straight back — an underrated but valuable quality.",
       },
     },
     {
       type: "p",
       text: {
         ja:
-          "空中戦の勝率55.0%は、ボランチ・インサイドMFの枠組みでは水準以上の数字だ。\n" +
-          "カゼミロ（42.6%）やカイセド（37.0%）と比較すると、鎌田の184cmという身長とジャンプのタイミングが活かされていることが分かる。\n" +
-          "セットプレー守備など空中戦が求められる局面での安定感は、チームにとって計算できる要素の一つと言える。",
+          "地上戦勝率や空中戦勝率も水準以上のレベルであり、世界最高峰のプレミアリーグに適応できていると言える。",
         en:
-          "An aerial duel success rate of 55.0% is above average for a midfielder or central role.\n" +
-          "Compared with Casemiro (42.6%) and Caicedo (37.0%), Kamada's 184cm frame and timing in the air appear to be genuine assets.\n" +
-          "His reliability in aerial situations — particularly for defensive set pieces — provides Crystal Palace with a dependable option in those moments.",
+          "His success rates in both ground duels and aerial duels are above average, a sign that he has adapted well to the demands of the Premier League — the highest level of club football in the world.",
       },
     },
 
@@ -117,13 +121,13 @@ export const kamada2425 = {
       type: "p",
       text: {
         ja:
-          "鎌田のプロファイルは、ゴールという分かりやすい指標だけを見ると過小評価されやすいタイプと言える。\n" +
-          "xA・チャンス創出・タックル数・空中戦勝率といった複数の指標を重ね合わせると、攻守にわたってチームに貢献するバランス型のMFとしての輪郭が浮かび上がる。\n" +
-          "得点関与数が今後どれだけ伸びるかが評価の分かれ目になるが、スコアに残らない貢献でチームを支える姿勢は、データにも表れている。",
+          "鎌田のプロファイルは、（堅守速攻というゴールが生まれにくいチームに所属していることもあるが）ゴールやアシストという分かりやすい指標だけを見ると過小評価されやすいタイプである。\n" +
+          "xA・チャンス創出・タックル数・地上戦／空中戦勝率といった複数の指標で、上位チームの一流選手に引けを取らない同等としたスタッツを残しており、チームの月間MVPに選ばれたことも頷ける。\n" +
+          "来シーズン以降の所属は不透明ではあるが、引き続きプレミアリーグやECL、Ｗ杯での活躍を期待したい。",
         en:
-          "Kamada's profile is one that can easily be underestimated when assessed through goals alone.\n" +
-          "When multiple metrics are overlaid — xA, chance creation, tackles, and aerial success — he emerges as a balanced, box-to-box midfielder who contributes at both ends of the pitch.\n" +
-          "The extent to which his goal involvement numbers grow will be a key factor in how he is evaluated, but his data-backed contribution in areas that do not appear on the scoresheet is already evident.",
+          "Kamada's profile is one that can easily be underestimated when assessed purely through goals and assists — partly because Crystal Palace's defensive, counter-attacking style is not one that naturally generates high goal tallies.\n" +
+          "Across multiple metrics — xA, chance creation, tackles, and both ground and aerial duel success rates — he holds his own against top-level players from the league's leading clubs, and it comes as no surprise that he was named his side's Player of the Month.\n" +
+          "His future beyond this season remains uncertain, but there is every reason to look forward to his continued contributions in the Premier League, the Europa Conference League, and at the World Cup.",
       },
     },
   ] as ArticleBlock[],
