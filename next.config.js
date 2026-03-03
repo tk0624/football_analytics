@@ -1,9 +1,10 @@
 // next.config.js
 const repo = 'football_analytics';
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  distDir: 'docs',
+  distDir: isProd ? 'docs' : '.next',
   basePath: `/${repo}`,
   assetPrefix: `/${repo}`,
   trailingSlash: true,
