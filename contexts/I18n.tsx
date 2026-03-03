@@ -25,8 +25,8 @@ const dictionary: Dict = {
   // トップページ
   homeTitle: { ja: "Samurai Metrics", en: "Samurai Metrics" },
   homeLead: {
-    ja: "海外で活躍する日本人サッカー選手の、見えにくい貢献をデータで捉える。",
-    en: "Examining the less visible contributions of Japanese players overseas."
+    ja: "海外で活躍する日本人選手の貢献をデータで見える化",
+    en: "Visualising the contributions of Japanese players competing abroad."
   },
 
   // 記事一覧セクション

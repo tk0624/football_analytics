@@ -5,17 +5,26 @@ import styles from "../styles/Article.module.css";
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-// ── デフォルト表示スタッツ（9項目）───────────────────────────────
+// ── デフォルト表示スタッツ（14項目）───────────────────────────────
 const DEFAULT_METRICS = new Set([
+  // 攻撃
+  "Goals_Per90",
   "xG_Per90",
+  "BigChancesMissed_Per90",
+  "Assists_Per90",
   "xA_Per90",
   "BigChancesCreated_Per90",
-  "GroundDuelsWon_pg_Per90",
-  "AerialWin_pct",
-  "LongBallAcc_pct",
-  "CrossAcc_pct",
+  // パス・ドリブル
+  "LongBalls_pg_Per90",
+  "Crosses_pg_Per90",
+  "SuccDribbles_pg_Per90",
+  // 守備
+  "PossessionLost_Per90",
   "Interceptions_Per90",
   "Tackles_Per90",
+  // デュエル
+  "GroundWin_pct",
+  "AerialWin_pct",
 ]);
 
 // ── メトリクス名の日英ラベルマップ ──────────────────────────────────
@@ -44,6 +53,7 @@ const LABEL_MAP: Record<string, { ja: string; en: string }> = {
   WasFouled_Per90:          { ja: "被ファウル /90",     en: "Was Fouled /90" },
   LongBallAcc_pct:          { ja: "ロングB精度%",       en: "Long Ball Acc%" },
   CrossAcc_pct:             { ja: "クロス精度%",        en: "Cross Acc%" },
+  SuccDribbles_pct:         { ja: "ドリブル成功率%",   en: "Dribbles %" },
   GroundWin_pct:            { ja: "地上デュエル勝率%",  en: "Ground Win%" },
   AerialWin_pct:            { ja: "空中デュエル勝率%",  en: "Aerial Win%" },
 };
@@ -67,7 +77,7 @@ const GROUPS = [
   {
     key: "duel",
     label: { ja: "デュエル", en: "Duels" },
-    metrics: ["GroundDuelsWon_pg_Per90", "AerialDuelsWon_pg_Per90", "GroundWin_pct", "AerialWin_pct", "SuccDribbles_pg_Per90"],
+    metrics: ["GroundDuelsWon_pg_Per90", "AerialDuelsWon_pg_Per90", "GroundWin_pct", "AerialWin_pct", "SuccDribbles_pg_Per90", "SuccDribbles_pct"],
   },
   {
     key: "discipline",
