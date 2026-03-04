@@ -6,6 +6,7 @@
 - コードの修正・追加（CSS, TSX, TS, Python など）
 - ビルド・エクスポート・git commit / push などのデプロイ操作
 - 設定ファイルの編集（`next.config.js`, `tsconfig.json` など）
+- 動作確認できるコード変更の場合は、特に指示がなければコード修正後に `npm run build` でビルド確認し、問題なければそのままデプロイ（postexport → git commit → push）まで実施する
 
 ### 事前に許可を求める操作（実行禁止）
 - OS・システム設定の変更
