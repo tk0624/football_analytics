@@ -73,6 +73,12 @@
   color: #c0c0c0;
 }
 
+.langArea {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 /* ─ Main Content ─ */
 .mainContent {
   display: block;
@@ -90,19 +96,36 @@
     align-items: stretch;
   }
 
+  /* 2段構成: 上段 = ロゴ + 言語切替、下段 = メニュー */
   .nav {
-    padding: 0 12px;
-    height: 48px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px 6px;
+    gap: 0;
+    align-items: center;
   }
 
-  /* モバイルでは absolute を解除してインライン表示 */
+  .logoArea {
+    order: 1;
+    flex: 1;
+  }
+
+  .langArea {
+    order: 2;
+    flex-shrink: 0;
+  }
+
   .menu {
+    order: 3;
     display: flex;
     position: static;
     transform: none;
-    gap: 12px;
-    flex: 1;
+    width: 100%;
     justify-content: center;
+    gap: 20px;
+    padding: 5px 0 2px;
+    border-top: 1px solid #1f1f1f;
+    margin-top: 4px;
   }
 
   .menuLink {

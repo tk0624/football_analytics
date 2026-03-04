@@ -32,7 +32,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </a>
         </nav>
 
-        <LanguageSwitch />
+        <div className={styles.langArea}><LanguageSwitch /></div>
       </header>
 
       <main className={styles.mainContent}>{children}</main>

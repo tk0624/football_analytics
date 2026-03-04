@@ -242,15 +242,24 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
       yanchor: "top" as const,
       font: { size: 11 },
     },
-    // 左右マージンを広げてラベルのクリップを防ぐ（モバイルは左をさらに広げる）
+    // 左右均等なマージン＋polar.domainで円を縮小しラベル領域を確保
     margin: isMobile
-      ? { t: 30, b: 100, l: 90, r: 30 }
-      : { t: 40, b: 120, l: 60, r: 40 },
+      ? { t: 20, b: 80, l: 20, r: 20 }
+      : { t: 40, b: 120, l: 40, r: 40 },
     polar: {
       ...((layout as any).polar ?? {}),
+      // 内側に入れることで左右均等にラベルスペースを固定確保
+      domain: isMobile
+        ? { x: [0.15, 0.85], y: [0.0, 1.0] }
+        : { x: [0.08, 0.92], y: [0.0, 1.0] },
       angularaxis: {
         ...(((layout as any).polar as any)?.angularaxis ?? {}),
         tickfont: { size: isMobile ? 7 : 9 },
+      },
+      radialaxis: {
+        ...(((layout as any).polar as any)?.radialaxis ?? {}),
+        range: [0, 5],
+        visible: true,
       },
     },
   };
