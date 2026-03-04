@@ -9,60 +9,68 @@
   box-sizing: border-box;
 }
 
-/* ─ 言語切替（最上部中央） ─ */
-.langSwitchTop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 8px 0;
-  background: transparent;
-  border-bottom: 1px solid #222; /* 軽く区切り線（お好みで削除OK） */
-  box-sizing: border-box;
-}
-
 /* ─ Nav ─ */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1080px;
-  padding: 0.5rem 1rem;
-  background: #1a1a1a;
-  border-bottom: 1px solid #333;
+  max-width: 100%;
+  padding: 0 28px;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1f1f1f;
   box-sizing: border-box;
-}
-
-.brand {
-  font-weight: 700;
-  letter-spacing: .2px;
-  color: #58a6ff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  font-size: clamp(16px, 2.0vw, 20px);
-  line-height: 1.2;
 }
 
 .logoArea {
   display: flex;
   align-items: center;
-  font-weight: bold;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.logoDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7ed957;
+  box-shadow: 0 0 8px rgba(126, 217, 87, 0.5);
+  flex-shrink: 0;
+}
+
+.brand {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #e8e8e8;
 }
 
 .menu {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menuLink {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-decoration: none;
-  color: #b0b0b0;
+  color: #707070;
+  transition: color 0.15s;
 }
 
 .menuLink:hover {
-  text-decoration: underline;
-  color: #ff914d;
+  color: #c0c0c0;
 }
 
 /* ─ Main Content ─ */
@@ -71,7 +79,7 @@
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 0;
   flex: 1;
   box-sizing: border-box;
 }
@@ -82,27 +90,17 @@
     align-items: stretch;
   }
 
-  .langSwitchTop {
-    justify-content: center;
-    width: 100%;
-    padding: 8px 0;
-  }
-
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
+    padding: 0 16px;
+    height: 48px;
   }
 
   .menu {
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+    display: none;
   }
 
   .mainContent {
     max-width: 100%;
-    padding: 16px;
+    padding: 0;
   }
 }

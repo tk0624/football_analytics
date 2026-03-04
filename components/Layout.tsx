@@ -9,11 +9,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className={styles.page}>
-      {/* 言語切替をページ最上部中央に配置（ここだけ残す） */}
-      <div className={styles.langSwitchTop}>
-        <LanguageSwitch />
-      </div>
-
       <header className={styles.nav}>
         <div className={styles.logoArea}>
           <span className={styles.logoDot} />
@@ -36,6 +31,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {t("navContact")}
           </a>
         </nav>
+
+        <LanguageSwitch />
       </header>
 
       <main className={styles.mainContent}>{children}</main>
