@@ -91,12 +91,22 @@
   }
 
   .nav {
-    padding: 0 16px;
+    padding: 0 12px;
     height: 48px;
   }
 
+  /* モバイルでは absolute を解除してインライン表示 */
   .menu {
-    display: none;
+    display: flex;
+    position: static;
+    transform: none;
+    gap: 12px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .menuLink {
+    font-size: 11px;
   }
 
   .mainContent {

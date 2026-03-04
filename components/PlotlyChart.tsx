@@ -1,6 +1,6 @@
 // components/PlotlyChart.tsx
 import dynamic from "next/dynamic";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import styles from "../styles/Article.module.css";
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
@@ -117,6 +117,15 @@ interface PlotlyChartProps {
 }
 
 export default function PlotlyChart({ data, layout, caption, lang = "ja", defaultPlayers, defaultMetrics }: PlotlyChartProps) {
+  // モバイル判定（SSR安全）
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   const allMetrics: string[] = useMemo(() => {
     const firstTrace = data[0] as { theta?: string[] } | undefined;
     return firstTrace?.theta ?? [];
@@ -222,14 +231,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     plot_bgcolor: "transparent",
     // ズーム・回転を禁止
     dragmode: false as const,
-    // ラベルが切れないよう polar angularaxis フォントを小さめに
-    polar: {
-      ...((layout as any).polar ?? {}),
-      angularaxis: {
-        ...(((layout as any).polar as any)?.angularaxis ?? {}),
-        tickfont: { size: 8 },
-      },
-    },
+
     // 凡例をチャート下部に横並び配置 → スマホでも重ならない
     legend: {
       ...(layout.legend ?? {}),
@@ -240,8 +242,17 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
       yanchor: "top" as const,
       font: { size: 11 },
     },
-    // 左右マージンを広げてラベルのクリップを防ぐ
-    margin: { t: 40, b: 120, l: 40, r: 40 },
+    // 左右マージンを広げてラベルのクリップを防ぐ（モバイルは左をさらに広げる）
+    margin: isMobile
+      ? { t: 30, b: 100, l: 90, r: 30 }
+      : { t: 40, b: 120, l: 60, r: 40 },
+    polar: {
+      ...((layout as any).polar ?? {}),
+      angularaxis: {
+        ...(((layout as any).polar as any)?.angularaxis ?? {}),
+        tickfont: { size: isMobile ? 7 : 9 },
+      },
+    },
   };
 
   const activeGroups = GROUPS.map((g) => ({
