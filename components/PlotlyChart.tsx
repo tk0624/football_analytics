@@ -224,8 +224,15 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   const clearAll = () => setSelected(new Set());
   const resetDefault = () => setSelected(new Set(effectiveDefault));
 
+  // Plotly layout.title をHTMLとして外出しし、Plotly内タイトルと被りを防ぐ
+  const chartTitle: string =
+    typeof (layout as any).title === "string"
+      ? (layout as any).title
+      : ((layout as any).title as any)?.text ?? "";
+
   const mergedLayout = {
     ...layout,
+    title: { text: "" }, // HTML側で描画するためPlotly内タイトルを非表示
     autosize: true,
     paper_bgcolor: "transparent",
     plot_bgcolor: "transparent",
@@ -275,6 +282,9 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   return (
     // imageWrapper ではなく独自ラッパーを使い、前後テキストとの被りを防ぐ
     <div className={styles.chartSection}>
+      {/* ── チャートタイトル（HTML描画・Plotly側は非表示）── */}
+      {chartTitle && <p className={styles.chartTitle}>{chartTitle}</p>}
+
       {/* ── メトリクス選択パネル ── */}
       <div className={styles.metricPanel}>
         <button className={styles.metricToggleBtn} onClick={() => setPanelOpen((v) => !v)}>
