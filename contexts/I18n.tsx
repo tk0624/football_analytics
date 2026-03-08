@@ -51,6 +51,16 @@ const dictionary: Dict = {
     en: "Can data capture the contribution that earned him Player of the Month?"
   },
   cardKamadaRead:  { ja: "分析を読む", en: "Read analysis" },
+
+  // 冨安記事カード
+  cardTomiyasuTag:   { ja: "24/25 シーズン分析", en: "2024/25 Season Analysis" },
+  cardTomiyasuTitle: { ja: "冨安健洋", en: "Takehiro Tomiyasu" },
+  cardTomiyasuTeam:  { ja: "アーセナル", en: "Arsenal" },
+  cardTomiyasuDesc:  {
+    ja: "SBのデータが示すCBとしての真価",
+    en: "CB quality revealed through SB data"
+  },
+  cardTomiyasuRead:  { ja: "分析を読む", en: "Read analysis" },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {

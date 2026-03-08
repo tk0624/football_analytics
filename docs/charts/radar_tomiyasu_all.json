@@ -1,0 +1,352 @@
+{
+  "data": [
+    {
+      "fill": "toself",
+      "name": "Takehiro Tomiyasu",
+      "opacity": 0.6,
+      "r": [
+        3.29,
+        3.29,
+        3.86,
+        4.43,
+        3.29,
+        4.43,
+        3.29,
+        3.29,
+        2.71,
+        5.0,
+        2.14,
+        2.14,
+        3.86
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#F5C842",
+        "width": 1.5
+      },
+      "fillcolor": "#F5C842"
+    },
+    {
+      "fill": "toself",
+      "name": "Kyle Walker",
+      "opacity": 0.6,
+      "r": [
+        1.0,
+        1.0,
+        4.43,
+        1.0,
+        2.14,
+        5.0,
+        4.43,
+        4.43,
+        1.0,
+        1.0,
+        3.29,
+        3.29,
+        5.0
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#60AFFF",
+        "width": 1.5
+      },
+      "fillcolor": "#60AFFF"
+    },
+    {
+      "fill": "toself",
+      "name": "Trent Alexander-Arnold",
+      "opacity": 0.6,
+      "r": [
+        4.14,
+        1.57,
+        1.57,
+        2.14,
+        1.0,
+        3.86,
+        5.0,
+        3.86,
+        5.0,
+        4.43,
+        4.43,
+        5.0,
+        1.0
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#FF7B7B",
+        "width": 1.5
+      },
+      "fillcolor": "#FF7B7B"
+    },
+    {
+      "fill": "toself",
+      "name": "Reece James",
+      "opacity": 0.6,
+      "r": [
+        2.14,
+        2.14,
+        3.29,
+        1.57,
+        4.43,
+        2.14,
+        3.86,
+        5.0,
+        4.43,
+        2.71,
+        5.0,
+        4.43,
+        2.71
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#6EE6A0",
+        "width": 1.5
+      },
+      "fillcolor": "#6EE6A0"
+    },
+    {
+      "fill": "toself",
+      "name": "Aaron Wan-Bissaka",
+      "opacity": 0.6,
+      "r": [
+        5.0,
+        4.43,
+        5.0,
+        2.71,
+        5.0,
+        1.0,
+        1.57,
+        2.71,
+        1.57,
+        3.29,
+        1.0,
+        1.57,
+        3.29
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#FFB347",
+        "width": 1.5
+      },
+      "fillcolor": "#FFB347"
+    },
+    {
+      "fill": "toself",
+      "name": "Emerson Royal",
+      "opacity": 0.6,
+      "r": [
+        1.57,
+        5.0,
+        1.0,
+        5.0,
+        3.86,
+        1.57,
+        1.0,
+        2.14,
+        3.29,
+        3.86,
+        1.57,
+        1.0,
+        4.43
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#C77DFF",
+        "width": 1.5
+      },
+      "fillcolor": "#C77DFF"
+    },
+    {
+      "fill": "toself",
+      "name": "Vladimir Coufal",
+      "opacity": 0.6,
+      "r": [
+        2.71,
+        2.71,
+        2.71,
+        3.86,
+        1.57,
+        3.29,
+        2.71,
+        1.57,
+        3.86,
+        1.57,
+        3.86,
+        3.86,
+        1.57
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#4DD9E8",
+        "width": 1.5
+      },
+      "fillcolor": "#4DD9E8"
+    },
+    {
+      "fill": "toself",
+      "name": "Matty Cash",
+      "opacity": 0.6,
+      "r": [
+        4.14,
+        3.86,
+        2.14,
+        3.29,
+        2.71,
+        2.71,
+        2.14,
+        1.0,
+        2.14,
+        2.14,
+        2.71,
+        2.71,
+        2.14
+      ],
+      "theta": [
+        "Interceptions_Per90",
+        "Tackles_Per90",
+        "DribbledPast_Per90",
+        "Clearances_Per90",
+        "GroundWin_pct",
+        "AerialWin_pct",
+        "LongBalls_pg_Per90",
+        "LongBallAcc_pct",
+        "Crosses_pg_Per90",
+        "CrossAcc_pct",
+        "Assists_Per90",
+        "BigChancesCreated_Per90",
+        "PossessionLost_Per90"
+      ],
+      "type": "scatterpolar",
+      "line": {
+        "color": "#FF9FBF",
+        "width": 1.5
+      },
+      "fillcolor": "#FF9FBF"
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Takehiro Tomiyasu 24/25"
+    },
+    "paper_bgcolor": "rgba(0,0,0,0)",
+    "plot_bgcolor": "rgba(0,0,0,0)",
+    "font": {
+      "color": "#f5f5f5"
+    },
+    "polar": {
+      "bgcolor": "rgba(0,0,0,0)",
+      "radialaxis": {
+        "range": [
+          0,
+          5
+        ],
+        "visible": true
+      }
+    }
+  }
+}
