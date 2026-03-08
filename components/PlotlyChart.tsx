@@ -165,17 +165,22 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
         return acc;
       }, []);
       const color = PLAYER_COLORS[colorIdx % PLAYER_COLORS.length];
+      const filteredTheta = indices.map((i) => theta[i]);
+      const filteredR     = indices.map((i) => r[i]);
       return {
         ...trace,
-        theta: indices.map((i) => theta[i]),
-        r: indices.map((i) => r[i]),
-        line: { ...(trace.line ?? {}), color },
+        theta: filteredTheta,
+        r:     filteredR,
+        // ツールチップに表示する日英ラベル名（LABEL_MAPから取得）
+        customdata: filteredTheta.map((m) => getLabel(m, lang)),
+        hovertemplate: "%{customdata}<br>%{r:.2f}<extra>%{fullData.name}</extra>",
+        line:   { ...(trace.line   ?? {}), color },
         marker: { ...(trace.marker ?? {}), color },
         // プレイヤー選択状態を維持
         visible: hiddenPlayers.has(trace.name) ? "legendonly" : true,
       };
     });
-  }, [data, selected, hiddenPlayers, defaultPlayers]);
+  }, [data, selected, hiddenPlayers, defaultPlayers, lang]);
 
   // 凡例クリックでプレイヤー表示切替（メトリクス変更時も維持）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -236,6 +241,12 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     autosize: true,
     paper_bgcolor: "transparent",
     plot_bgcolor: "transparent",
+    // ツールチップの㗣イル・フォント調整
+    hoverlabel: {
+      bgcolor: "#1e1e1e",
+      bordercolor: "#444",
+      font: { color: "#f5f5f5", size: 12 },
+    },
     // ズーム・回転を禁止
     dragmode: false as const,
 
