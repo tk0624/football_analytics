@@ -1,9 +1,9 @@
-// pages/article_tomiyasu-2024-25.tsx
+// pages/article_tomiyasu-2021-22.tsx
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";
-import { tomiyasu2425, pickText, renderLines } from "../content/articles/tomiyasu_2425";
+import { tomiyasu2122, pickText, renderLines } from "../content/articles/tomiyasu_2122";
 import PlotlyChart from "../components/PlotlyChart";
 import radarAllJson from "../public/charts/radar_tomiyasu_all.json";
 import radarCmpJson from "../public/charts/radar_tomiyasu_cmp.json";
@@ -21,10 +21,10 @@ export default function TomiyasuArticle() {
   return (
     <Layout>
       <article className={styles.article}>
-        <h1 className={styles.title}>{pickText(tomiyasu2425.title, lang)}</h1>
+        <h1 className={styles.title}>{pickText(tomiyasu2122.title, lang)}</h1>
 
         <p className={styles.lead}>
-          {renderLines(pickText(tomiyasu2425.lead, lang)).map((line, i) => (
+          {renderLines(pickText(tomiyasu2122.lead, lang)).map((line, i) => (
             <span key={i}>
               {line}
               <br />
@@ -32,7 +32,7 @@ export default function TomiyasuArticle() {
           ))}
         </p>
 
-        {tomiyasu2425.blocks.map((b, idx) => {
+        {tomiyasu2122.blocks.map((b, idx) => {
           if (b.type === "h2") {
             return (
               <section key={idx} className={styles.section}>

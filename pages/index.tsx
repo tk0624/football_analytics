@@ -54,7 +54,7 @@ export default function Home() {
           </Link>
 
           {/* 冨安記事 */}
-          <Link href="/article_tomiyasu-2024-25/" className={styles.articleCard}>
+          <Link href="/article_tomiyasu-2021-22/" className={styles.articleCard}>
             <span className={styles.cardTag}>{t("cardTomiyasuTag")}</span>
             <div className={styles.cardMeta}>
               <span className={styles.cardPlayer}>{t("cardTomiyasuTitle")}</span>

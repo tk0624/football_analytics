@@ -53,7 +53,7 @@ const dictionary: Dict = {
   cardKamadaRead:  { ja: "分析を読む", en: "Read analysis" },
 
   // 冨安記事カード
-  cardTomiyasuTag:   { ja: "24/25 シーズン分析", en: "2024/25 Season Analysis" },
+  cardTomiyasuTag:   { ja: "21/22 シーズン分析", en: "2021/22 Season Analysis" },
   cardTomiyasuTitle: { ja: "冨安健洋", en: "Takehiro Tomiyasu" },
   cardTomiyasuTeam:  { ja: "アーセナル", en: "Arsenal" },
   cardTomiyasuDesc:  {

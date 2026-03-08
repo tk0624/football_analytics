@@ -1,4 +1,4 @@
-// content/articles/tomiyasu_2425.ts
+// content/articles/tomiyasu_2122.ts
 export type Lang = "ja" | "en";
 
 type Text = { ja: string; en?: string };
@@ -9,16 +9,16 @@ export type ArticleBlock =
   | { type: "image"; src: string; alt: Text; caption?: Text }
   | { type: "chart"; chartKey: string; caption?: Text; defaultPlayers?: string[]; defaultMetrics?: string[] };
 
-export const tomiyasu2425 = {
-  slug: "article_tomiyasu-2024-25",
+export const tomiyasu2122 = {
+  slug: "article_tomiyasu-2021-22",
   title: {
-    ja: "冨安健洋 24/25シーズン分析 ─ SBのデータが語るCBとしての真価",
-    en: "Takehiro Tomiyasu 24/25 Season Analysis — CB Quality Hidden in SB Data",
+    ja: "冨安健洋 21/22シーズン分析 ─ SBのデータが語るCBとしての真価",
+    en: "Takehiro Tomiyasu 21/22 Season Analysis — CB Quality Hidden in SB Data",
   } as Text,
 
   lead: {
     ja:
-      "2024/25シーズン、冨安健洋はまたもや長期離脱という試練に直面した。\n" +
+      "2021/22シーズン、冨安健洋はまたもや長期離脱という試練に直面した。\n" +
       "アーセナルでの主戦場は右サイドバック（SB）であり、本人がより得意とするセンターバック（CB）ではない。\n" +
       "出場機会も21試合・平均80分にとどまり、満足のいくシーズンとは言い難かっただろう。\n\n" +
       "しかし、限られた出場時間のなかで記録されたデータを、同シーズンのプレミアリーグを代表するSB7名と比較してみると、\n" +
@@ -26,7 +26,7 @@ export const tomiyasu2425 = {
       "なかでも際立つのが、空中戦勝率・クリア数・被ドリブル突破の少なさといった、CB的な守備指標での高評価だ。\n\n" +
       "本稿では、冨安のデータをひも解きながら、SBというポジションでも発揮され続けた本来の能力 ── すなわちCBとしての素養 ── を検証する。",
     en:
-      "The 2024/25 season brought yet another long-term injury for Takehiro Tomiyasu.\n" +
+      "The 2021/22 season brought yet another long-term injury for Takehiro Tomiyasu.\n" +
       "At Arsenal, his primary role remained right back (SB), rather than the centre-back (CB) position where he is most comfortable.\n" +
       "With only 21 appearances, averaging 80 minutes per game, it was far from the season he would have wished for.\n\n" +
       "Yet when the data recorded during those limited minutes is placed alongside seven of the Premier League's leading right backs in the same season,\n" +
@@ -58,7 +58,7 @@ export const tomiyasu2425 = {
       ],
       caption: {
         ja:
-          "冨安健洋 24/25シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
+          "冨安健洋 21/22シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
           "比較用にピックアップした選手（プレミアリーグ 同シーズン）\n" +
           "カイル・ウォーカー（マンチェスター・シティ）\n" +
           "トレント・アレクサンダー＝アーノルド（リヴァプール）\n" +
@@ -68,7 +68,7 @@ export const tomiyasu2425 = {
           "ウラジミール・クフォル（ウェストハム・ユナイテッド）\n" +
           "マティ・キャッシュ（アストン・ヴィラ）",
         en:
-          "Radar chart of Takehiro Tomiyasu's metrics for the 2024/25 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
+          "Radar chart of Takehiro Tomiyasu's metrics for the 2021/22 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
           "Players selected for comparison (Premier League, same season):\n" +
           "Kyle Walker (Manchester City)\n" +
           "Trent Alexander-Arnold (Liverpool)\n" +
@@ -134,8 +134,8 @@ export const tomiyasu2425 = {
         "PossessionLost_Per90",
       ],
       caption: {
-        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 24/25シーズン",
-        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2024/25 season",
+        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 21/22シーズン",
+        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2021/22 season",
       },
     },
 
