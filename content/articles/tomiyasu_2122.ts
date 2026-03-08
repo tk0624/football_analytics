@@ -1,4 +1,4 @@
-// content/articles/tomiyasu_2122.ts
+﻿// content/articles/tomiyasu_2122.ts
 export type Lang = "ja" | "en";
 
 type Text = { ja: string; en?: string };
@@ -12,27 +12,29 @@ export type ArticleBlock =
 export const tomiyasu2122 = {
   slug: "article_tomiyasu-2021-22",
   title: {
-    ja: "冨安健洋 21/22シーズン分析 ─ SBのデータが語るCBとしての真価",
-    en: "Takehiro Tomiyasu 21/22 Season Analysis — CB Quality Hidden in SB Data",
+    ja: "冨安健洋 アーセナル時代分析 ─ SBのデータが語るCBとしての真価",
+    en: "Takehiro Tomiyasu — Arsenal Years Analysis: CB Quality Hidden in SB Data",
   } as Text,
 
   lead: {
     ja:
-      "2021/22シーズン、冨安健洋はまたもや長期離脱という試練に直面した。\n" +
-      "アーセナルでの主戦場は右サイドバック（SB）であり、本人がより得意とするセンターバック（CB）ではない。\n" +
-      "出場機会も21試合・平均80分にとどまり、満足のいくシーズンとは言い難かっただろう。\n\n" +
-      "しかし、限られた出場時間のなかで記録されたデータを、同シーズンのプレミアリーグを代表するSB7名と比較してみると、\n" +
-      "「SBとして」十分に通用していたことが浮かび上がる。\n" +
-      "なかでも際立つのが、空中戦勝率・クリア数・被ドリブル突破の少なさといった、CB的な守備指標での高評価だ。\n\n" +
-      "本稿では、冨安のデータをひも解きながら、SBというポジションでも発揮され続けた本来の能力 ── すなわちCBとしての素養 ── を検証する。",
+      "2026年1月、冨安健洋はアヤックスに移籍し、長期離脱からの復帰を果たした。\n" +
+      "アーセナルでの最後の出場は2024年10月まで遡り、実に1年以上ピッチから遠ざかっていたことになる。\n" +
+      "アヤックス復帰後は左右のサイドバックとしての途中出場が中心となっており、コンディションの回復を慎重に積み上げている段階だ。\n\n" +
+      "アーセナル時代に目を移しても、起用ポジションは大きく差異はなく、左右のサイドバックを主戦場とし、偽サイドバックとしての役割もこなした。\n" +
+      "守備力の高い選手で最終ラインを固めたいアルテタ監督の方針にマッチしていた。\n" +
+      "その一方で、筆者は、冨安の本来のポジションはセンターバックであり、SB起用はあくまでチーム事情によるユニット活用の結果だと捉えている。\n\n" +
+      "怪我に見舞われたシーズンが多かった冨安だが、なかでもアーセナルに加入した初年度にあたる21/22シーズンは、限られた出場時間ながらも対PL水準でのデータが揃う数少ないシーズンだ。\n" +
+      "本稿ではそのシーズンのデータを軸に、SBとしての数字のなかに滲み出るCB的な守備能力の高さを検証する。",
     en:
-      "The 2021/22 season brought yet another long-term injury for Takehiro Tomiyasu.\n" +
-      "At Arsenal, his primary role remained right back (SB), rather than the centre-back (CB) position where he is most comfortable.\n" +
-      "With only 21 appearances, averaging 80 minutes per game, it was far from the season he would have wished for.\n\n" +
-      "Yet when the data recorded during those limited minutes is placed alongside seven of the Premier League's leading right backs in the same season,\n" +
-      "a clear picture emerges: even as an SB, Tomiyasu was more than competitive at the top level.\n" +
-      "What stands out most are his aerial duel win rate, clearances, and the rarity with which he was dribbled past — metrics that reflect the qualities of an elite CB.\n\n" +
-      "This article examines Tomiyasu's data and makes the case that, even deployed as a full back, the defining traits of a world-class centre-back were plain to see.",
+      "In January 2026, Takehiro Tomiyasu joined Ajax and completed his return from a lengthy injury layoff.\n" +
+      "His last appearance for Arsenal had been in October 2024, meaning he had been away from competitive football for over a year.\n" +
+      "Since returning, he has mainly been used as a substitute at left or right back, carefully rebuilding his match fitness.\n\n" +
+      "Turning to his Arsenal years, his role remained largely the same — left and right back were his primary positions, and he also operated as a false full-back.\n" +
+      "This suited Arteta's preference for a defensively solid back line.\n" +
+      "That said, in the author's view, Tomiyasu's natural position is centre-back; his deployment at SB was ultimately a product of squad needs and tactical unit management.\n\n" +
+      "Tomiyasu's career at Arsenal was disrupted by injuries in many seasons, but the 2021/22 campaign — his debut season at the club — is one of the few where a meaningful dataset against Premier League opposition is available.\n" +
+      "This article uses that season as its primary reference point, examining how the hallmarks of an elite centre-back made themselves visible even through the lens of SB data.",
   } as Text,
 
   blocks: [
@@ -58,8 +60,8 @@ export const tomiyasu2122 = {
       ],
       caption: {
         ja:
-          "冨安健洋 21/22シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
-          "比較用にピックアップした選手（プレミアリーグ 同シーズン）\n" +
+          "冨安健洋 24/25シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
+          "比較用にピックアップした選手（プレミアリーグ 24/25シーズン）\n" +
           "カイル・ウォーカー（マンチェスター・シティ）\n" +
           "トレント・アレクサンダー＝アーノルド（リヴァプール）\n" +
           "リース・ジェームズ（チェルシー）\n" +
@@ -68,8 +70,8 @@ export const tomiyasu2122 = {
           "ウラジミール・クフォル（ウェストハム・ユナイテッド）\n" +
           "マティ・キャッシュ（アストン・ヴィラ）",
         en:
-          "Radar chart of Takehiro Tomiyasu's metrics for the 2021/22 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
-          "Players selected for comparison (Premier League, same season):\n" +
+          "Radar chart of Takehiro Tomiyasu's metrics for the 2024/25 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
+          "Players selected for comparison (Premier League, 2024/25 season):\n" +
           "Kyle Walker (Manchester City)\n" +
           "Trent Alexander-Arnold (Liverpool)\n" +
           "Reece James (Chelsea)\n" +
@@ -90,14 +92,16 @@ export const tomiyasu2122 = {
           "これらはSBとしては異色の数字であり、むしろCBに求められる能力を色濃く反映している。\n\n" +
           "クリアというアクションは、ゴール前の危険なクロスやコーナーキックを跳ね返す局面で頻発する。\n" +
           "SBがここで高い数値を示すということは、深い位置まで引いて守備に参加していることを意味し、\n" +
-          "チームがビルドアップよりも守備的なプレーを求める場面でも適切に対応できていたことを示す。",
+          "チームがビルドアップよりも守備的なプレーを求める場面でも適切に対応できていたことを示す。\n" +
+          "偽サイドバックとして内側に絞り、中央のスペースを埋める役割を帯びれば、内側からのクリア機会は増える。それも高いクリア数につながっていると考えられる。",
         en:
           "The most striking aspect of Tomiyasu's defensive profile is his clearance rate per 90 and aerial duel win percentage.\n" +
           "Among the eight full backs in the comparison group, his clearances rank among the highest, and his aerial win rate of 54.0% is nearly identical to Kyle Walker's 54.3%.\n" +
           "These are unusual figures for a full back, and they closely mirror the qualities expected of a centre-back.\n\n" +
           "Clearances occur most often when dealing with dangerous crosses or set-pieces into the box.\n" +
           "A high clearance count for an SB suggests he was regularly dropping deep to contribute defensively,\n" +
-          "and that he was dealing effectively with the most threatening situations even in a wider defensive role.",
+          "and that he was dealing effectively with the most threatening situations even in a wider defensive role.\n" +
+          "When operating as a false full-back \u2014 tucking inside to occupy central spaces \u2014 opportunities to make clearances centrally naturally increase, which likely contributes to this figure.",
       },
     },
     {
@@ -134,8 +138,8 @@ export const tomiyasu2122 = {
         "PossessionLost_Per90",
       ],
       caption: {
-        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 21/22シーズン",
-        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2021/22 season",
+        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 24/25シーズン",
+        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2024/25 season",
       },
     },
 
@@ -164,18 +168,19 @@ export const tomiyasu2122 = {
       type: "p",
       text: {
         ja:
-          "冨安健洋は24/25シーズン、怪我による制約を抱えながらも、SBとしてプレミアリーグのトップレベルで十分に通用するパフォーマンスを示した。\n\n" +
+          "冨安健洋は21/22シーズン、長期離脱という制約を抱えながらも、SBとしてプレミアリーグのトップレベルで十分に通用するパフォーマンスを示した。\n\n" +
           "そのなかで特に印象的なのは、クリア数・空中戦勝率・被ドリブル突破の少なさという守備指標の高さだ。\n" +
           "これらはSBとしての役割を超えた数字であり、冨安がCBとして本来持つ守備能力がそのままSBのプレーにも反映されていると解釈できる。\n\n" +
-          "本来の主戦場であるCBとして、コンディションを万全に保ってシーズンを戦い抜くことができれば、\n" +
-          "冨安はプレミアリーグでも最高水準のDFとして再び存在感を示すだろう。\n" +
-          "25/26シーズン以降の復活に、大いに期待したい。",
+          "今後、本来の主戦場であるCBとして定着すれば、対峙する相手はウインガータイプからストライカータイプへと変わり、求められる守備対応も異なってくる。\n" +
+          "だが、イタリア時代からCBとSBの両方を高いレベルでこなしてきた冨安の適応力を考えれば、その橋渡りにさほどの懸念はないだろう。\n" +
+          "アヤックスでの復帰を足がかりに、再びCBとして自身の本来の舞台で存在感を発揮する日を心待ちにしたい。",
         en:
-          "Despite the constraints imposed by injury, Takehiro Tomiyasu showed in 2024/25 that he remained more than capable of competing at the highest level of the Premier League as a full back.\n\n" +
-          "What stands out most clearly is his performance across the suite of CB-type defensive metrics: clearances, aerial duel win rate, and resistance to being dribbled past.\n" +
-          "These figures go beyond what is typically demanded of a full back, and are best understood as the natural expression of the defensive qualities Tomiyasu has built as a centre-back, transferred seamlessly into a wider role.\n\n" +
-          "If he is able to remain fit and return to his preferred position at CB, there is every reason to believe he can re-establish himself among the very best defenders in the Premier League.\n" +
-          "His performances from the 2025/26 season onward will be eagerly awaited.",
+          "Takehiro Tomiyasu demonstrated in the 2021/22 season that, despite a lengthy injury absence, he remained fully capable of competing at the highest level of the Premier League as a full back.\n\n" +
+          "What stands out most clearly is his performance across CB-type defensive metrics: clearances, aerial duel win rate, and resistance to being dribbled past.\n" +
+          "These figures go beyond what is typically demanded of a full back, and are best understood as the natural expression of defensive qualities built as a centre-back, channelled seamlessly into a wider role.\n\n" +
+          "Should he establish himself as a CB going forward, the opponents he faces will shift from winger types to striker types, and the demands on his defending will change accordingly.\n" +
+          "Yet for a player who has operated at both CB and SB to a high level since his time in Italy, bridging that gap should pose little difficulty.\n" +
+          "With his return via Ajax as the starting point, the hope is that he will once again show the full depth of his ability where it belongs — at centre-back.",
       },
     },
   ] as ArticleBlock[],

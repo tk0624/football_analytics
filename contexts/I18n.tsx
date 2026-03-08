@@ -61,6 +61,7 @@ const dictionary: Dict = {
     en: "CB quality revealed through SB data"
   },
   cardTomiyasuRead:  { ja: "分析を読む", en: "Read analysis" },
+  cardWipBadge:      { ja: "作成中", en: "In progress" },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
