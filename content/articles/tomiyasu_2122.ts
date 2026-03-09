@@ -48,8 +48,10 @@ export const tomiyasu2122 = {
         "Tackles_Per90",
         "DribbledPast_Per90",
         "Clearances_Per90",
-        "GroundWin_pct",
+        "AerialDuelsWon_pg_Per90",
         "AerialWin_pct",
+        "GroundDuelsWon_pg_Per90",
+        "GroundWin_pct",
         "LongBalls_pg_Per90",
         "LongBallAcc_pct",
         "Crosses_pg_Per90",
@@ -87,34 +89,15 @@ export const tomiyasu2122 = {
       type: "p",
       text: {
         ja:
-          "冨安の守備面で最も目を引くのは、クリア数（/90）と空中戦勝率の高さだ。\n" +
-          "8名の比較グループ内でクリア数はトップクラスに位置し、空中戦勝率54.0%はウォーカー（54.3%）とほぼ並ぶ。\n" +
-          "これらはSBとしては異色の数字であり、むしろCBに求められる能力を色濃く反映している。\n\n" +
-          "クリアというアクションは、ゴール前の危険なクロスやコーナーキックを跳ね返す局面で頻発する。\n" +
-          "SBがここで高い数値を示すということは、深い位置まで引いて守備に参加していることを意味し、\n" +
-          "チームがビルドアップよりも守備的なプレーを求める場面でも適切に対応できていたことを示す。\n" +
-          "偽サイドバックとして内側に絞り、中央のスペースを埋める役割を帯びれば、内側からのクリア機会は増える。それも高いクリア数につながっていると考えられる。",
+          "冨安の守備面で最も目を引くのは、空中戦の圧倒的な勝利数と勝率だ。トランジションの質が高く、直線や対角のロングパスも多用されるプレミアリーグにおいて、相手側のそういったロングパス戦術を無意味にする影響があったと言える。\n" +
+          "他にもクリア数や、被ドリブル突破数、タックルやインターセプションなど基本的な守備指標は平均以上であり、守備観点では、対象シーズンにおいて上位チームの主力であった他7人※と比較してもトップレベルのスタッツであった。\n" +
+          "※ウォーカーやジェームズ、ワン＝ビサカといった選手が対人守備において強烈な強さを示す存在であったのは周知の事実だろう。\n\n" +
+          "もちろん、ストライカータイプと対峙するCBに対して、SBはウインガータイプと対峙するため空中戦は優位となるが、スピードに秀でた選手に対して地上戦守備で全く見劣りしなかったのは、十分CBとしても通用する証拠であると捉えている。",
         en:
-          "The most striking aspect of Tomiyasu's defensive profile is his clearance rate per 90 and aerial duel win percentage.\n" +
-          "Among the eight full backs in the comparison group, his clearances rank among the highest, and his aerial win rate of 54.0% is nearly identical to Kyle Walker's 54.3%.\n" +
-          "These are unusual figures for a full back, and they closely mirror the qualities expected of a centre-back.\n\n" +
-          "Clearances occur most often when dealing with dangerous crosses or set-pieces into the box.\n" +
-          "A high clearance count for an SB suggests he was regularly dropping deep to contribute defensively,\n" +
-          "and that he was dealing effectively with the most threatening situations even in a wider defensive role.\n" +
-          "When operating as a false full-back \u2014 tucking inside to occupy central spaces \u2014 opportunities to make clearances centrally naturally increase, which likely contributes to this figure.",
-      },
-    },
-    {
-      type: "p",
-      text: {
-        ja:
-          "被ドリブル突破（/90）の少なさも見逃せない。\n" +
-          "SBは1対1の局面を頻繁に強いられるポジションだが、冨安はこのスコアで比較グループ上位に位置する。\n" +
-          "これは純粋な対人強度だけでなく、相手の仕掛けを予測し封じる読みの鋭さ ── まさにCBとして培われた能力 ── が支えていると考えられる。",
-        en:
-          "The low rate at which Tomiyasu was dribbled past is equally notable.\n" +
-          "Full backs are regularly placed in one-on-one situations, yet Tomiyasu ranked among the best in the comparison group on this metric.\n" +
-          "This reflects not just raw defensive strength, but rather an ability to read and nullify attacking moves before they develop — precisely the type of anticipation refined through years as a centre-back.",
+          "The most striking aspect of Tomiyasu's defensive profile is the sheer volume and win rate of his aerial duels. In the Premier League, where through-balls and diagonal long passes are used at high frequency, his ability to neutralise such long-ball tactics proved invaluable.\n" +
+          "Other basic defensive metrics — clearances, dribble resistance, tackles and interceptions — were all above average. Against the seven other players in the comparison group, all starters at top clubs during that season, Tomiyasu's defensive statistics ranked at the very top.\n" +
+          "※ It is widely known that players such as Walker, James, and Wan-Bissaka were dominant forces in one-on-one defending.\n\n" +
+          "Of course, whereas CBs primarily face striker types, SBs deal predominantly with wingers, which naturally confers an aerial advantage in that role. Yet the fact that Tomiyasu showed no weakness in ground duels against pace-reliant wide players is, in the author's view, ample evidence that he is equally capable of performing at CB level.",
       },
     },
 
@@ -127,8 +110,10 @@ export const tomiyasu2122 = {
         "Tackles_Per90",
         "DribbledPast_Per90",
         "Clearances_Per90",
-        "GroundWin_pct",
+        "AerialDuelsWon_pg_Per90",
         "AerialWin_pct",
+        "GroundDuelsWon_pg_Per90",
+        "GroundWin_pct",
         "LongBalls_pg_Per90",
         "LongBallAcc_pct",
         "Crosses_pg_Per90",
@@ -149,17 +134,16 @@ export const tomiyasu2122 = {
       text: {
         ja:
           "攻撃的な数値に目を向けると、アシスト数や決定機創出頻度は比較グループ内で控えめな水準にとどまる。\n" +
-          "これはSBとしての攻撃参加機会が限られていたこと、また怪我による離脱期間の影響も考えられる。\n\n" +
-          "一方で、際立って高いのがクロス精度（41.9%）だ。\n" +
-          "比較グループ内で最大値を示しており、T.A.A（30.0%）、ウォーカー（17.1%）を大きく上回る。\n" +
-          "試行回数は多くないものの、上げた際の質は確かなものがある。\n" +
-          "また、ボール保持での損失（ポゼッションロス/90）が少なく、不用意なボールの失い方をしない安定感も特徴的だ。",
+          "これは、前述の通り、アルテタ監督が片方または両方のSBに、より守備的な貢献を求めている戦術的な影響も大きかったと考えられる。\n\n" +
+          "ただ、意外にも際立って高かったのがクロス精度で、T.A.A（アーノルド）よりも高い水準であった。\n" +
+          "冨安はポゼッションロスも少なく、これらのスタッツは、より確度の高いシーンでクロスを上げて、不用意なボールの失い方をしないパス選択をしていたことの裏付けとなっている。\n" +
+          "また、試合を観ているとわかるが、冨安は左右どちらの足でも精度の高いパスを出すことができる。この辺りの安定感や器用さも冨安の特徴の一つだ。",
         en:
           "On the attacking side, Tomiyasu's assist numbers and big chance creation rate are modest within the comparison group.\n" +
-          "This is likely a reflection of limited opportunity to contribute in advanced positions, compounded by the disruption of his injury layoffs.\n\n" +
-          "What does stand out, however, is his cross accuracy of 41.9% — the highest in the comparison group, and well clear of Alexander-Arnold (30.0%) and Walker (17.1%).\n" +
-          "While he did not attempt crosses frequently, when he did, the quality was consistently high.\n" +
-          "His low possession-loss rate per 90 also underlines a composure in possession that is rarely associated with a wide defensive player.",
+          "As noted earlier, this is largely attributable to Arteta's tactical preference for one or both SBs to provide a more defensive contribution.\n\n" +
+          "What does stand out unexpectedly, however, is his cross accuracy, which exceeded that of Alexander-Arnold (T.A.A).\n" +
+          "His possession loss rate is also low; together, these figures suggest a player who waited for the right moment to deliver crosses and consistently made composed passing decisions.\n" +
+          "Those who watch him play will also know that he can deliver accurate passes with either foot — this composure and versatility is another hallmark of his game.",
       },
     },
 
@@ -168,19 +152,17 @@ export const tomiyasu2122 = {
       type: "p",
       text: {
         ja:
-          "冨安健洋は21/22シーズン、長期離脱という制約を抱えながらも、SBとしてプレミアリーグのトップレベルで十分に通用するパフォーマンスを示した。\n\n" +
-          "そのなかで特に印象的なのは、クリア数・空中戦勝率・被ドリブル突破の少なさという守備指標の高さだ。\n" +
-          "これらはSBとしての役割を超えた数字であり、冨安がCBとして本来持つ守備能力がそのままSBのプレーにも反映されていると解釈できる。\n\n" +
-          "今後、本来の主戦場であるCBとして定着すれば、対峙する相手はウインガータイプからストライカータイプへと変わり、求められる守備対応も異なってくる。\n" +
-          "だが、イタリア時代からCBとSBの両方を高いレベルでこなしてきた冨安の適応力を考えれば、その橋渡りにさほどの懸念はないだろう。\n" +
-          "アヤックスでの復帰を足がかりに、再びCBとして自身の本来の舞台で存在感を発揮する日を心待ちにしたい。",
+          "冨安健洋は、長期離脱という制約を抱えながらも、SBとしてプレミアリーグのトップレベルで十分に通用するパフォーマンスを示した。\n\n" +
+          "空中戦勝利を筆頭に、クリアや被ドリブル突破、タックルやインターセプションなど総合的な守備指標の高さは、SBとしての役割を超えた数字であり、冨安がCBとして本来持つ守備能力がそのままSBのプレーにも反映されていると解釈できる。\n\n" +
+          "今後、もしまた欧州の舞台でCBとして定着すれば、対峙する相手はウインガータイプからストライカータイプへと変わり、求められる守備対応も異なってくる。\n" +
+          "だが、イタリア時代から代表戦を含めてCBとSBの両方を高いレベルでこなしてきた冨安の適応力を考えれば、その橋渡りにさほどの懸念はないだろう。\n" +
+          "アヤックスでの復帰を足がかりに、再びCBとして自身のポテンシャルを最大限発揮する日を心待ちにしたい。",
         en:
-          "Takehiro Tomiyasu demonstrated in the 2021/22 season that, despite a lengthy injury absence, he remained fully capable of competing at the highest level of the Premier League as a full back.\n\n" +
-          "What stands out most clearly is his performance across CB-type defensive metrics: clearances, aerial duel win rate, and resistance to being dribbled past.\n" +
-          "These figures go beyond what is typically demanded of a full back, and are best understood as the natural expression of defensive qualities built as a centre-back, channelled seamlessly into a wider role.\n\n" +
-          "Should he establish himself as a CB going forward, the opponents he faces will shift from winger types to striker types, and the demands on his defending will change accordingly.\n" +
-          "Yet for a player who has operated at both CB and SB to a high level since his time in Italy, bridging that gap should pose little difficulty.\n" +
-          "With his return via Ajax as the starting point, the hope is that he will once again show the full depth of his ability where it belongs — at centre-back.",
+          "Takehiro Tomiyasu demonstrated that, despite a lengthy injury absence, he remained fully capable of competing at the highest level of the Premier League as a full back.\n\n" +
+          "Aerial duel victories above all, along with clearances, dribble resistance, tackles and interceptions — the breadth of his defensive numbers goes beyond what is typically demanded of an SB, and is best understood as the natural expression of defensive qualities built as a CB, channelled seamlessly into a wider role.\n\n" +
+          "Should he go on to establish himself as a CB once more on the European stage, the opponents he faces will shift from wingers to strikers, and the defensive demands will change accordingly.\n" +
+          "Yet for a player who has operated to a high level at both CB and SB since his time in Italy — including at international level — bridging that gap should pose little difficulty.\n" +
+          "With his return via Ajax as the starting point, the hope is that he will once again show the full depth of his potential where it truly belongs — at centre-back.",
       },
     },
   ] as ArticleBlock[],

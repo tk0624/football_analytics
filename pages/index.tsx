@@ -53,16 +53,16 @@ export default function Home() {
             <span className={styles.cardReadLink}>{t("cardKamadaRead")} →</span>
           </Link>
 
-          {/* 冨安記事（作成中） */}
-          <div className={`${styles.articleCard} ${styles.articleCardWip}`}>
-            <span className={styles.cardWipBadge}>{t("cardWipBadge")}</span>
+          {/* 冨安記事 */}
+          <Link href="/article_tomiyasu-2021-22/" className={styles.articleCard}>
             <span className={styles.cardTag}>{t("cardTomiyasuTag")}</span>
             <div className={styles.cardMeta}>
               <span className={styles.cardPlayer}>{t("cardTomiyasuTitle")}</span>
               <span className={styles.cardTeam}>{t("cardTomiyasuTeam")}</span>
             </div>
             <p className={styles.cardDesc}>{t("cardTomiyasuDesc")}</p>
-          </div>
+            <span className={styles.cardReadLink}>{t("cardTomiyasuRead")} →</span>
+          </Link>
 
         </div>
       </section>
