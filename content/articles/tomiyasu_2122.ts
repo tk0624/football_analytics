@@ -62,8 +62,8 @@ export const tomiyasu2122 = {
       ],
       caption: {
         ja:
-          "冨安健洋 24/25シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
-          "比較用にピックアップした選手（プレミアリーグ 24/25シーズン）\n" +
+          "冨安健洋 21/22シーズンにおける各指標（1〜5スケール、比較選手でランク正規化）\n\n" +
+          "比較用にピックアップした選手（プレミアリーグ 21/22シーズン）\n" +
           "カイル・ウォーカー（マンチェスター・シティ）\n" +
           "トレント・アレクサンダー＝アーノルド（リヴァプール）\n" +
           "リース・ジェームズ（チェルシー）\n" +
@@ -72,8 +72,8 @@ export const tomiyasu2122 = {
           "ウラジミール・クフォル（ウェストハム・ユナイテッド）\n" +
           "マティ・キャッシュ（アストン・ヴィラ）",
         en:
-          "Radar chart of Takehiro Tomiyasu's metrics for the 2024/25 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
-          "Players selected for comparison (Premier League, 2024/25 season):\n" +
+          "Radar chart of Takehiro Tomiyasu's metrics for the 2021/22 season (scaled 1–5, rank-normalised against comparison group).\n\n" +
+          "Players selected for comparison (Premier League, 2021/22 season):\n" +
           "Kyle Walker (Manchester City)\n" +
           "Trent Alexander-Arnold (Liverpool)\n" +
           "Reece James (Chelsea)\n" +
@@ -123,8 +123,8 @@ export const tomiyasu2122 = {
         "PossessionLost_Per90",
       ],
       caption: {
-        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 24/25シーズン",
-        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2024/25 season",
+        ja: "冨安 vs ウォーカー・アレクサンダー＝アーノルド・リース・ジェームズ 21/22シーズン",
+        en: "Tomiyasu vs Walker, Alexander-Arnold, Reece James — 2021/22 season",
       },
     },
 
