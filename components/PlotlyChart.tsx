@@ -126,10 +126,16 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  // レーダーチャートかどうかを判定（theta が存在するか）
+  const isRadarChart = useMemo(() => {
+    return data.length > 0 && (data[0] as { theta?: unknown }).theta !== undefined;
+  }, [data]);
+
   const allMetrics: string[] = useMemo(() => {
+    if (!isRadarChart) return [];
     const firstTrace = data[0] as { theta?: string[] } | undefined;
     return firstTrace?.theta ?? [];
-  }, [data]);
+  }, [data, isRadarChart]);
 
   // デフォルトは defaultMetrics 指定時はその項目、未指定は DEFAULT_METRICS のうちチャートに存在する項目のみ
   const effectiveDefault = useMemo(() => {
@@ -151,6 +157,9 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   });
 
   const filteredData = useMemo(() => {
+    // 非レーダーチャートはデータをそのまま渡す
+    if (!isRadarChart) return data;
+
     // defaultPlayers を先頭に並べ替えて色を順番に割り当て
     const dp = new Set(defaultPlayers ?? []);
     const sorted = [
@@ -235,7 +244,16 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
       ? (layout as any).title
       : ((layout as any).title as any)?.text ?? "";
 
-  const mergedLayout = {
+  // 非レーダーチャート用のシンプルレイアウト（JSON定義を最大限尊重）
+  const nonRadarLayout = {
+    ...layout,
+    autosize: true,
+    dragmode: false as const,
+    // タイトルはHTML側で描画するためPlotly内を消す
+    title: { text: "" },
+  };
+
+  const mergedLayout = isRadarChart ? {
     ...layout,
     title: { text: "" }, // HTML側で描画するためPlotly内タイトルを非表示
     autosize: true,
@@ -280,7 +298,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
         visible: true,
       },
     },
-  };
+    } : nonRadarLayout;
 
   const activeGroups = GROUPS.map((g) => ({
     ...g,
@@ -291,12 +309,12 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   const otherMetrics = allMetrics.filter((m) => !knownMetrics.has(m));
 
   return (
-    // imageWrapper ではなく独自ラッパーを使い、前後テキストとの被りを防ぐ
     <div className={styles.chartSection}>
       {/* ── チャートタイトル（HTML描画・Plotly側は非表示）── */}
       {chartTitle && <p className={styles.chartTitle}>{chartTitle}</p>}
 
-      {/* ── メトリクス選択パネル ── */}
+      {/* ── メトリクス選択パネル（レーダーチャートのみ）── */}
+      {isRadarChart && (
       <div className={styles.metricPanel}>
         <button className={styles.metricToggleBtn} onClick={() => setPanelOpen((v) => !v)}>
           {panelOpen
@@ -364,6 +382,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
           </div>
         )}
       </div>
+      )}
 
       {/* ── Plotly チャート ── */}
       <div className={styles.plotWrapper}>

@@ -6,11 +6,19 @@ import { useI18n } from "../contexts/I18n";
 import { japanSquad2026, pickText, renderLines } from "../content/articles/japan_squad_2026";
 import PlotlyChart from "../components/PlotlyChart";
 
+import squadBarGkJson from "../public/charts/squad_bar_gk.json";
+import squadBarDfJson from "../public/charts/squad_bar_df.json";
+import squadBarMfJson from "../public/charts/squad_bar_mf.json";
+import squadBarFwJson from "../public/charts/squad_bar_fw.json";
+import squadScatterJson from "../public/charts/squad_scatter.json";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const chartMap: Record<string, { data: any[]; layout: any }> = {
-  // Charts will be added here when JSON files are generated
-  // e.g. table_squad_all: tableSquadAllJson as { data: any[]; layout: any },
-  // e.g. scatter_squad_pos: scatterSquadPosJson as { data: any[]; layout: any },
+  squad_bar_gk:  squadBarGkJson  as { data: any[]; layout: any },
+  squad_bar_df:  squadBarDfJson  as { data: any[]; layout: any },
+  squad_bar_mf:  squadBarMfJson  as { data: any[]; layout: any },
+  squad_bar_fw:  squadBarFwJson  as { data: any[]; layout: any },
+  squad_scatter: squadScatterJson as { data: any[]; layout: any },
 };
 
 export default function JapanSquad2026Article() {

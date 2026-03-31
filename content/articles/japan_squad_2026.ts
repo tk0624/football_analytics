@@ -70,7 +70,7 @@ export const japanSquad2026 = {
     {
       // TODO: ポジション別切り替え散布図（横軸 apts_score / 縦軸 overall_rating / サイズ weapon_bonus）
       type: "chart",
-      chartKey: "scatter_squad_pos",
+      chartKey: "squad_scatter",
       caption: {
         ja: "横軸：APTSスコア（クラブ出場率×リーグ係数×100）\n縦軸：総合レーティング\nプロットサイズ：武器補正の強さ\nポジション別で表示を切り替えられます。",
         en: "X-axis: APTS score (playing time ratio × league coeff × 100)\nY-axis: Overall rating\nBubble size: Weapon bonus magnitude\nToggle display by position.",
@@ -88,6 +88,15 @@ export const japanSquad2026 = {
         en:
           "Zion Suzuki (overall 4.37) is the undisputed number one. In addition to his shot-stopping ability, his technical quality on the ball and long-kicking contribution to build-up play make him a natural fit for Moriyasu's system — qualities that earn him the maximum weapon bonus (weapon 2). With 13 Serie A appearances and 22 international caps, his experience reinforces the case. There is no debate about the starting spot.\n\n" +
           "For the remaining two places, the ratings tell a story of tight competition: Tomoki Hayakawa (3.38), Kosei Tani (3.09), Leo Brian Kokubo (2.95), Keisuke Osako (2.81), and Taishi Brandon Nozawa (2.65) are largely clustered together. The quality gap between them is not dramatic. Tani is a perfectly viable candidate, but backup goalkeepers carry significant off-pitch responsibilities — and given the preference coaches have shown for Hayakawa and Osako, we expect that pecking order to hold.",
+      },
+    },
+
+    {
+      type: "chart",
+      chartKey: "squad_bar_gk",
+      caption: {
+        ja: "各指標の総合評価への寄与量。★ = weapon補正あり、▲ = コンディション低下。",
+        en: "Contribution of each metric to the overall rating. ★ = weapon bonus, ▲ = condition penalty.",
       },
     },
 
@@ -111,6 +120,15 @@ export const japanSquad2026 = {
       },
     },
 
+    {
+      type: "chart",
+      chartKey: "squad_bar_df",
+      caption: {
+        ja: "各指標の総合評価への寄与量。★ = weapon補正あり、▲ = コンディション低下。",
+        en: "Contribution of each metric to the overall rating. ★ = weapon bonus, ▲ = condition penalty.",
+      },
+    },
+
     // ── MF ──────────────────────────────────────────────────
     { type: "h2", text: { ja: "MF（11枠）", en: "Midfielders (11 spots)" } },
     {
@@ -129,6 +147,15 @@ export const japanSquad2026 = {
       },
     },
 
+    {
+      type: "chart",
+      chartKey: "squad_bar_mf",
+      caption: {
+        ja: "各指標の総合評価への寄与量。★ = weapon補正あり、▲ = コンディション低下。",
+        en: "Contribution of each metric to the overall rating. ★ = weapon bonus, ▲ = condition penalty.",
+      },
+    },
+
     // ── FW ──────────────────────────────────────────────────
     { type: "h2", text: { ja: "FW（4枠）", en: "Forwards (4 spots)" } },
     {
@@ -144,6 +171,15 @@ export const japanSquad2026 = {
           "Daizen Maeda (4.56) is equally straightforward. His impact is sometimes limited when deployed as a wide forward, but his relentless pressing from the front is a weapon that does not depend on form — it is a world-class contribution in its own right. His tireless effort against England was exactly the kind of thing this team needs.\n\n" +
           "The player who did most to raise his stock on the British tour is Kento Shiogai (3.05). His score is based on combined stats — 12 appearances and 363 minutes at his previous Dutch club (FotMob average: 6.98), merged with his Wolfsburg data to give a total of 20 appearances and 648 minutes. His speed, explosive movement, physicality, and aggressive style give the impression that something is always about to happen when he is on the pitch. How much he plays for Wolfsburg between now and the end of the season will be telling.\n\n" +
           "The final spot is a three-way race between Koki Ogawa (3.06), Keisuke Goto (2.95), and Shuto Machino (2.49). Any of them could make the squad, but Machino's near-total absence from club football is a significant concern. Ogawa, with his aerial presence as a clear weapon, has a narrow edge. That said, his minutes at club level have been declining — and Keisuke Goto, who has accumulated 28 appearances and 2,080 minutes at Sint-Truiden, has built a quiet but solid case.",
+      },
+    },
+
+    {
+      type: "chart",
+      chartKey: "squad_bar_fw",
+      caption: {
+        ja: "各指標の総合評価への寄与量。★ = weapon補正あり、▲ = コンディション低下。",
+        en: "Contribution of each metric to the overall rating. ★ = weapon bonus, ▲ = condition penalty.",
       },
     },
 

@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "orientation": "h",
+      "name": "クラブ実績（APTS）",
+      "x": [
+        1.179,
+        1.125,
+        1.473,
+        1.407,
+        1.407,
+        1.31
+      ],
+      "y": [
+        "野澤 大志ブランドン",
+        "大迫 敬介",
+        "小久保 玲央ブライアン",
+        "谷 晃生",
+        "早川 友基",
+        "鈴木 彩艶 ★★"
+      ],
+      "marker": {
+        "color": "#7ed957",
+        "opacity": 0.88
+      },
+      "customdata": [
+        "<b>野澤 大志ブランドン</b><br>総合: 2.65<br>クラブ実績（APTS）: 1.18",
+        "<b>大迫 敬介</b><br>総合: 2.81<br>クラブ実績（APTS）: 1.13",
+        "<b>小久保 玲央ブライアン</b><br>総合: 2.95<br>クラブ実績（APTS）: 1.47",
+        "<b>谷 晃生</b><br>総合: 3.09<br>クラブ実績（APTS）: 1.41",
+        "<b>早川 友基</b><br>総合: 3.38<br>クラブ実績（APTS）: 1.41",
+        "<b>鈴木 彩艶</b><br>総合: 4.37<br>クラブ実績（APTS）: 1.31  ★ weapon ×1.4"
+      ],
+      "hovertemplate": "%{customdata}<extra></extra>"
+    },
+    {
+      "type": "bar",
+      "orientation": "h",
+      "name": "代表実績（NT）",
+      "x": [
+        0.295,
+        0.844,
+        0.295,
+        0.563,
+        0.563,
+        1.747
+      ],
+      "y": [
+        "野澤 大志ブランドン",
+        "大迫 敬介",
+        "小久保 玲央ブライアン",
+        "谷 晃生",
+        "早川 友基",
+        "鈴木 彩艶 ★★"
+      ],
+      "marker": {
+        "color": "#ff914d",
+        "opacity": 0.88
+      },
+      "customdata": [
+        "<b>野澤 大志ブランドン</b><br>総合: 2.65<br>代表実績（NT）: 0.29",
+        "<b>大迫 敬介</b><br>総合: 2.81<br>代表実績（NT）: 0.84",
+        "<b>小久保 玲央ブライアン</b><br>総合: 2.95<br>代表実績（NT）: 0.29",
+        "<b>谷 晃生</b><br>総合: 3.09<br>代表実績（NT）: 0.56",
+        "<b>早川 友基</b><br>総合: 3.38<br>代表実績（NT）: 0.56",
+        "<b>鈴木 彩艶</b><br>総合: 4.37<br>代表実績（NT）: 1.75  ★ weapon ×1.4"
+      ],
+      "hovertemplate": "%{customdata}<extra></extra>"
+    },
+    {
+      "type": "bar",
+      "orientation": "h",
+      "name": "パフォーマンス（FotMob）",
+      "x": [
+        1.179,
+        0.844,
+        1.179,
+        1.125,
+        1.407,
+        1.31
+      ],
+      "y": [
+        "野澤 大志ブランドン",
+        "大迫 敬介",
+        "小久保 玲央ブライアン",
+        "谷 晃生",
+        "早川 友基",
+        "鈴木 彩艶 ★★"
+      ],
+      "marker": {
+        "color": "#60afff",
+        "opacity": 0.88
+      },
+      "customdata": [
+        "<b>野澤 大志ブランドン</b><br>総合: 2.65<br>パフォーマンス（FotMob）: 1.18",
+        "<b>大迫 敬介</b><br>総合: 2.81<br>パフォーマンス（FotMob）: 0.84",
+        "<b>小久保 玲央ブライアン</b><br>総合: 2.95<br>パフォーマンス（FotMob）: 1.18",
+        "<b>谷 晃生</b><br>総合: 3.09<br>パフォーマンス（FotMob）: 1.13",
+        "<b>早川 友基</b><br>総合: 3.38<br>パフォーマンス（FotMob）: 1.41",
+        "<b>鈴木 彩艶</b><br>総合: 4.37<br>パフォーマンス（FotMob）: 1.31  ★ weapon ×1.4"
+      ],
+      "hovertemplate": "%{customdata}<extra></extra>",
+      "text": [
+        "2.65",
+        "2.81",
+        "2.95",
+        "3.09",
+        "3.38",
+        "4.37"
+      ],
+      "textposition": "outside",
+      "textfont": {
+        "color": "#f5f5f5",
+        "size": 11
+      },
+      "cliponaxis": false
+    }
+  ],
+  "layout": {
+    "paper_bgcolor": "#111111",
+    "plot_bgcolor": "#1a1a1a",
+    "font": {
+      "color": "#f5f5f5",
+      "family": "sans-serif",
+      "size": 12
+    },
+    "legend": {
+      "bgcolor": "rgba(0,0,0,0)",
+      "font": {
+        "color": "#cccccc"
+      },
+      "orientation": "h",
+      "x": 0,
+      "y": -0.14
+    },
+    "hoverlabel": {
+      "bgcolor": "#1a1a1a",
+      "font": {
+        "color": "#f5f5f5"
+      },
+      "bordercolor": "#444444"
+    },
+    "barmode": "stack",
+    "title": {
+      "text": "GK 候補",
+      "font": {
+        "color": "#f5f5f5",
+        "size": 14
+      },
+      "x": 0.02
+    },
+    "xaxis": {
+      "gridcolor": "#2e2e2e",
+      "zerolinecolor": "#444444",
+      "tickfont": {
+        "color": "#b0b0b0",
+        "size": 11
+      },
+      "linecolor": "#444444",
+      "range": [
+        0,
+        6.0
+      ],
+      "dtick": 1,
+      "title": {
+        "text": "総合レーティング（各指標の寄与量）",
+        "font": {
+          "color": "#888888"
+        },
+        "standoff": 8
+      }
+    },
+    "yaxis": {
+      "gridcolor": "#2e2e2e",
+      "zerolinecolor": "#444444",
+      "tickfont": {
+        "color": "#b0b0b0",
+        "size": 11
+      },
+      "linecolor": "#444444",
+      "autorange": "reversed"
+    },
+    "height": 354,
+    "showlegend": true,
+    "margin": {
+      "l": 140,
+      "r": 60,
+      "t": 50,
+      "b": 70
+    }
+  }
+}
