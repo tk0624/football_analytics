@@ -31,6 +31,17 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>{t("sectionArticles")}</h2>
         <div className={styles.articleGrid}>
 
+          {/* 日本代表スカッド記事 */}
+          <Link href="/article_japan-squad-2026/" className={styles.articleCard}>
+            <span className={styles.cardTag}>{t("cardJapanSquadTag")}</span>
+            <div className={styles.cardMeta}>
+              <span className={styles.cardPlayer}>{t("cardJapanSquadTitle")}</span>
+              <span className={styles.cardTeam}>{t("cardJapanSquadTeam")}</span>
+            </div>
+            <p className={styles.cardDesc}>{t("cardJapanSquadDesc")}</p>
+            <span className={styles.cardReadLink}>{t("cardJapanSquadRead")} →</span>
+          </Link>
+
           {/* 三苫記事 */}
           <Link href="/article_mitoma-2024-25/" className={styles.articleCard}>
             <span className={styles.cardTag}>{t("cardMitomaTag")}</span>

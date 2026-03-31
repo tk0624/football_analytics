@@ -42,6 +42,16 @@ const dictionary: Dict = {
   },
   cardMitomaRead:  { ja: "分析を読む", en: "Read analysis" },
 
+  // 日本代表スカッド記事カード
+  cardJapanSquadTag:   { ja: "W杯2026 スカッド評価", en: "World Cup 2026 Squad Evaluation" },
+  cardJapanSquadTitle: { ja: "日本代表 W杯2026", en: "Japan NT — World Cup 2026" },
+  cardJapanSquadTeam:  { ja: "2026年6月開幕", en: "Kicks off June 2026" },
+  cardJapanSquadDesc:  {
+    ja: "53名を独自指標で横断評価。最終26名はどうなる？",
+    en: "53 candidates evaluated across a custom metric. Who makes the final 26?"
+  },
+  cardJapanSquadRead:  { ja: "分析を読む", en: "Read analysis" },
+
   // 鎌田記事カード
   cardKamadaTag:   { ja: "25/26 シーズン中分析", en: "2025/26 Mid-Season Analysis" },
   cardKamadaTitle: { ja: "鎌田大地", en: "Daichi Kamada" },
