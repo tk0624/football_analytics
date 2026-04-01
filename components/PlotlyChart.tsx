@@ -425,7 +425,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
         <Plot
           data={filteredData}
           layout={mergedLayout}
-          config={{ responsive: true, displayModeBar: false, scrollZoom: false }}
+          config={{ responsive: !isMobile, displayModeBar: false, scrollZoom: false }}
           style={{ width: "100%", height: "100%" }}
           onLegendClick={handleLegendClick}
           onLegendDoubleClick={handleLegendDoubleClick}
