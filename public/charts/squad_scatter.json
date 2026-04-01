@@ -398,6 +398,8 @@
       "orientation": "v",
       "x": 0.99,
       "y": 0.02,
+      "itemclick": "toggleothers",
+      "itemdoubleclick": "toggle",
       "xanchor": "right",
       "yanchor": "bottom",
       "bordercolor": "#444444",
@@ -408,9 +410,7 @@
           "color": "#888888",
           "size": 11
         }
-      },
-      "itemclick": "toggleothers",
-      "itemdoubleclick": "toggle"
+      }
     },
     "hoverlabel": {
       "bgcolor": "#1a1a1a",

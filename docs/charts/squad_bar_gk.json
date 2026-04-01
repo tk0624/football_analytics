@@ -229,6 +229,8 @@
       "orientation": "h",
       "x": 0,
       "y": -0.294,
+      "itemclick": false,
+      "itemdoubleclick": false,
       "yanchor": "top"
     },
     "hoverlabel": {
