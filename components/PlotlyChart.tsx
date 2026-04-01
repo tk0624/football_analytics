@@ -131,6 +131,14 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     return data.length > 0 && (data[0] as { theta?: unknown }).theta !== undefined;
   }, [data]);
 
+  // 散布図かどうかを判定
+  const isScatterChart = useMemo(() => {
+    return data.length > 0 && (data[0] as { type?: string }).type === "scatter";
+  }, [data]);
+
+  // 散布図ラベル表示状態
+  const [showScatterLabels, setShowScatterLabels] = useState(true);
+
   const allMetrics: string[] = useMemo(() => {
     if (!isRadarChart) return [];
     const firstTrace = data[0] as { theta?: string[] } | undefined;
@@ -158,7 +166,16 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
 
   const filteredData = useMemo(() => {
     // 非レーダーチャートはデータをそのまま渡す
-    if (!isRadarChart) return data;
+    if (!isRadarChart) {
+      // 散布図のラベル表示切替
+      if (isScatterChart) {
+        return data.map((trace) => ({
+          ...trace,
+          mode: showScatterLabels ? "markers+text" : "markers",
+        }));
+      }
+      return data;
+    }
 
     // defaultPlayers を先頭に並べ替えて色を順番に割り当て
     const dp = new Set(defaultPlayers ?? []);
@@ -189,7 +206,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
         visible: hiddenPlayers.has(trace.name) ? "legendonly" : true,
       };
     });
-  }, [data, selected, hiddenPlayers, defaultPlayers, lang]);
+  }, [data, selected, hiddenPlayers, defaultPlayers, lang, isScatterChart, showScatterLabels]);
 
   // 凡例クリックでプレイヤー表示切替（メトリクス変更時も維持）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -314,6 +331,20 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
     <div className={styles.chartSection}>
       {/* ── チャートタイトル（HTML描画・Plotly側は非表示）── */}
       {chartTitle && <p className={styles.chartTitle}>{chartTitle}</p>}
+
+      {/* ── 散布図ラベルトグルボタン ── */}
+      {isScatterChart && (
+        <div className={styles.metricPanel}>
+          <button
+            className={styles.metricToggleBtn}
+            onClick={() => setShowScatterLabels((v) => !v)}
+          >
+            {showScatterLabels
+              ? (lang === "ja" ? "ラベルを非表示" : "Hide Labels")
+              : (lang === "ja" ? "ラベルを表示" : "Show Labels")}
+          </button>
+        </div>
+      )}
 
       {/* ── メトリクス選択パネル（レーダーチャートのみ）── */}
       {isRadarChart && (
