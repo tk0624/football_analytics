@@ -194,6 +194,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   // 凡例クリックでプレイヤー表示切替（メトリクス変更時も維持）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleLegendClick = useCallback((e: any) => {
+    if (!isRadarChart) return undefined; // 非レーダーは Plotly native（itemclick 等）に委ねる
     const name: string | undefined = e?.data?.[e.curveNumber]?.name;
     if (!name) return undefined;
     setHiddenPlayers((prev) => {
@@ -207,6 +208,7 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
   // 凡例ダブルクリック：そのプレイヤーだけ表示
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleLegendDoubleClick = useCallback((e: any) => {
+    if (!isRadarChart) return undefined; // 非レーダーは Plotly native に委ねる
     const name: string | undefined = e?.data?.[e.curveNumber]?.name;
     if (!name) return undefined;
     const allPlayers: string[] = data.map((t) => t.name);
