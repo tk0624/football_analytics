@@ -14,7 +14,7 @@ export const japanSquad2026 = {
   lead: {
     ja:
       "2026年3,4月のスコットランド戦・イングランド戦をともに1-0で撃破し、ベストとも言える結果を残してW杯前最後の欧州遠征を終えた日本代表。\n" +
-      "6月11日の開幕まで残り約2カ月となり、最終26名の選考が現実的な議題として浮かぶ時期が来た。\n" +
+      "6月11日の開幕まで残り約2カ月となり、いよいよ最終26名の選考を決めなければいけない。\n" +
       "本稿では独自の定量指標を用いて、2025年より選出されている候補選手53名を対象に横断的に評価を行った。\n" +
       "指標はクラブでの出場実績、FotMob平均評価、日本代表通算キャップ評価の3軸に所属リーグ係数で補正し、さらに現時点のコンディションと「特性」の有無で総合評価を算出した。\n",
     en:
@@ -32,23 +32,37 @@ export const japanSquad2026 = {
       type: "p",
       text: {
         ja:
-          "総合評価は以下の式で算出している。\n\n" +
-          "  総合評価 ＝ (クラブ貢献評価 ＋ 代表経験評価 ＋ クラブパフォーマンス評価) ÷ 3 × コンディション係数 × 特性補正\n※ クラブ貢献評価には所属リーグに応じた係数を内包。\n\n" +
-          "【クラブ貢献評価(1〜5)】出場時間 ÷ (リーグ試合数 × 90分) × リーグ係数 × 100 をスコア化し、75以上=5 / 50以上=4 / 30以上=3 / 15以上=2 / 15未満=1。クラブでどれだけ試合に貢献できているか、リーグ強度込みで見る指標。\n" +
-          "【代表経験評価(1〜5)】通算代表キャップ数で5段階。0=1 / 1〜4=2 / 5〜14=3 / 15〜29=4 / 30以上=5。\n" +
-          "【クラブパフォーマンス評価(1〜5)】FotMob平均評価を5段階。7.5以上=5 / 7.0以上=4 / 6.5以上=3 / 6.0以上=2 / 6.0未満=1。複数クラブに在籍した場合は試合数加重平均を使用。\n" +
-          "【リーグ係数(0.81〜1.00)】Optaベースのリーグ強度係数。PL=1.000 / LaLiga=0.949 / Serie A=0.936 / Bundesliga=0.935など。クラブ貢献評価の算出に内包。\n" +
-          "【コンディション係数】コンディション3（万全）=×1.0 / 2（復帰の目途は立っているが万全でない）=×0.75 / 1（大きな怪我で直近復帰の目途が立っていない）=×0.5。\n" +
-          "【特性補正】森保監督の戦術・チーム作りに合致するユニークな強みを持つ場合に加算。より替えがきかない存在（特性 2）=×1.4 / 強みあり（特性 1）=×1.2 / なし=×1.0。",
+          "総合評価 ＝ (クラブ貢献評価 ＋ 代表経験評価 ＋ クラブパフォーマンス評価) ÷ 3 × コンディション係数 × 特性補正\n\n" +
+          "【クラブ貢献評価 (1〜5)】\n" +
+          "出場時間 ÷ (リーグ試合数 × 90分) × リーグ係数 × 100 をスコア化。\n" +
+          "75以上=5 / 50以上=4 / 30以上=3 / 15以上=2 / 15未満=1\n\n" +
+          "【代表経験評価 (1〜5)】\n" +
+          "通算代表キャップ数。0=1 / 1〜4=2 / 5〜14=3 / 15〜29=4 / 30以上=5\n\n" +
+          "【クラブパフォーマンス評価 (1〜5)】\n" +
+          "FotMob平均評価。7.5以上=5 / 7.0以上=4 / 6.5以上=3 / 6.0以上=2 / 6.0未満=1\n" +
+          "（複数クラブ在籍時は試合数加重平均）\n\n" +
+          "【リーグ係数 (0.81〜1.00)】\n" +
+          "Optaベースのリーグ強度係数。PL=1.000 / La Liga=0.949 / Serie A=0.936 / Bundesliga=0.935など。クラブ貢献評価の算出に内包。\n\n" +
+          "【コンディション係数】\n" +
+          "万全（3）=×1.0 / 復帰予定だが万全でない（2）=×0.75 / 復帰目途なし（1）=×0.5\n\n" +
+          "【特性補正】\n" +
+          "森保監督の戦術に合致する強みを持つ場合に加算。特性2（替えがきかない）=×1.4 / 特性1（強みあり）=×1.2 / なし=×1.0",
         en:
-          "The overall score is calculated as follows:\n\n" +
-          "  Overall Score = (Club Contribution Score + NT Experience Score + Club Performance Score) ÷ 3 × Condition Coefficient × Trait Bonus\n※ League coefficient is embedded within Club Contribution Score.\n\n" +
-          "[Club Contribution Score (1–5)] Minutes played ÷ (league matches × 90) × league coefficient × 100, scaled to: ≥75=5 / ≥50=4 / ≥30=3 / ≥15=2 / <15=1. Measures how much a player contributes at club level, adjusted for league strength.\n" +
-          "[NT Experience Score (1–5)] Total Japan national team caps: 0=1 / 1–4=2 / 5–14=3 / 15–29=4 / 30+=5. A proxy for accumulated international experience.\n" +
-          "[Club Performance Score (1–5)] FotMob average score: ≥7.5=5 / ≥7.0=4 / ≥6.5=3 / ≥6.0=2 / <6.0=1. Where a player has been at multiple clubs, a minutes-weighted average is used.\n" +
-          "[League Coefficient (0.81–1.00)] Opta-based league strength factor: PL=1.000 / La Liga=0.949 / Serie A=0.936 / Bundesliga=0.935, etc. Embedded within Club Contribution Score.\n" +
-          "[Condition Coefficient] Condition 3 (fully fit) = ×1.0 / Condition 2 (expected return soon but not yet 100%) = ×0.75 / Condition 1 (serious injury, return timeline unclear) = ×0.5.\n" +
-          "[Trait Bonus] Applied where a player has a unique strength aligned with Moriyasu's tactical approach. Irreplaceable (trait 2) = ×1.4 / Strength present (trait 1) = ×1.2 / None = ×1.0.",
+          "Overall Score = (Club Contribution Score + NT Experience Score + Club Performance Score) ÷ 3 × Condition Coefficient × Trait Bonus\n\n" +
+          "[Club Contribution Score (1–5)]\n" +
+          "Minutes played ÷ (league matches × 90) × league coefficient × 100.\n" +
+          "≥75=5 / ≥50=4 / ≥30=3 / ≥15=2 / <15=1\n\n" +
+          "[NT Experience Score (1–5)]\n" +
+          "Total Japan caps. 0=1 / 1–4=2 / 5–14=3 / 15–29=4 / 30+=5\n\n" +
+          "[Club Performance Score (1–5)]\n" +
+          "FotMob average rating. ≥7.5=5 / ≥7.0=4 / ≥6.5=3 / ≥6.0=2 / <6.0=1\n" +
+          "(Minutes-weighted average when at multiple clubs)\n\n" +
+          "[League Coefficient (0.81–1.00)]\n" +
+          "Opta-based league strength factor. PL=1.000 / La Liga=0.949 / Serie A=0.936 / Bundesliga=0.935, etc. Embedded within Club Contribution Score.\n\n" +
+          "[Condition Coefficient]\n" +
+          "Fully fit (3) = ×1.0 / Return expected but not 100% (2) = ×0.75 / Return timeline unclear (1) = ×0.5\n\n" +
+          "[Trait Bonus]\n" +
+          "Irreplaceable (trait 2) = ×1.4 / Strength present (trait 1) = ×1.2 / None = ×1.0",
       },
     },
 

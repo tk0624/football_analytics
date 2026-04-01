@@ -418,7 +418,10 @@ export default function PlotlyChart({ data, layout, caption, lang = "ja", defaul
       )}
 
       {/* ── Plotly チャート ── */}
-      <div className={styles.plotWrapper}>
+      <div
+        className={styles.plotWrapper}
+        style={layout.height ? { minHeight: layout.height, height: layout.height } : undefined}
+      >
         <Plot
           data={filteredData}
           layout={mergedLayout}
