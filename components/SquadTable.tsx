@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Article.module.css";
 
 type Player = {
@@ -37,7 +37,7 @@ function weaponMark(weapon: number): string {
 }
 
 function conditionMark(condition: number): string {
-  if (condition === 1) return "⚠";
+  if (condition === 1) return "×";
   if (condition === 2) return "▲";
   return "";
 }
@@ -115,9 +115,9 @@ export default function SquadTable({ players, lang, caption }: Props) {
           </thead>
           <tbody>
             {groups.map(({ pos, rows }) => (
-              <>
+              <React.Fragment key={pos}>
                 {filter === "ALL" && (
-                  <tr key={`header-${pos}`}>
+                  <tr>
                     <td
                       colSpan={5}
                       style={{
@@ -165,10 +165,30 @@ export default function SquadTable({ players, lang, caption }: Props) {
                     </td>
                   </tr>
                 ))}
-              </>
+              </React.Fragment>
             ))}
           </tbody>
         </table>
+      </div>
+
+      {/* Legend */}
+      <div style={{ display: "flex", gap: "18px", marginTop: "10px", flexWrap: "wrap" }}>
+        <span style={{ fontSize: "0.78rem", color: "#888" }}>
+          <span style={{ color: "#f5c842", marginRight: "4px" }}>★★</span>
+          {lang === "ja" ? "替えがきかない特性あり" : "Irreplaceable trait"}
+        </span>
+        <span style={{ fontSize: "0.78rem", color: "#888" }}>
+          <span style={{ color: "#f5c842", marginRight: "4px" }}>★</span>
+          {lang === "ja" ? "強みとなる特性あり" : "Notable trait"}
+        </span>
+        <span style={{ fontSize: "0.78rem", color: "#888" }}>
+          <span style={{ color: "#ff914d", marginRight: "4px" }}>▲</span>
+          {lang === "ja" ? "復帰予定だが万全でない" : "Expected return, not 100%"}
+        </span>
+        <span style={{ fontSize: "0.78rem", color: "#888" }}>
+          <span style={{ color: "#ff5a5a", marginRight: "4px" }}>×</span>
+          {lang === "ja" ? "復帰目途なし" : "Return timeline unclear"}
+        </span>
       </div>
 
       {caption && (
