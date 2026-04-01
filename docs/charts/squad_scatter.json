@@ -28,7 +28,7 @@
         "大迫 敬介",
         "野澤 大志ブランドン"
       ],
-      "textposition": "top center",
+      "textposition": "auto",
       "textfont": {
         "size": 9,
         "color": "#aaaaaa"
@@ -114,7 +114,7 @@
         "高井 幸大",
         "町田 浩樹"
       ],
-      "textposition": "top center",
+      "textposition": "auto",
       "textfont": {
         "size": 9,
         "color": "#aaaaaa"
@@ -239,7 +239,7 @@
         "熊坂 光希",
         "守田 英正"
       ],
-      "textposition": "top center",
+      "textposition": "auto",
       "textfont": {
         "size": 9,
         "color": "#aaaaaa"
@@ -342,7 +342,7 @@
         "平河 悠",
         "北野 颯太"
       ],
-      "textposition": "top center",
+      "textposition": "auto",
       "textfont": {
         "size": 9,
         "color": "#aaaaaa"
