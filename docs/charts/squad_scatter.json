@@ -439,6 +439,7 @@
         -2,
         100
       ],
+      "fixedrange": true,
       "title": {
         "text": "クラブ貢献評価（クラブ出場率×リーグ係数×100）",
         "font": {
@@ -459,6 +460,7 @@
         0.1,
         5.5
       ],
+      "fixedrange": true,
       "title": {
         "text": "総合評価",
         "font": {
