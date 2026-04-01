@@ -92,17 +92,6 @@ export const japanSquad2026 = {
 
     // ── GK ──────────────────────────────────────────────────
     { type: "h2", text: { ja: "GK（3枠）", en: "Goalkeepers (3 spots)" } },
-    {
-      type: "p",
-      text: {
-        ja:
-          "GKで絶対的な存在は鈴木彩艶だ。セービング力の高さに加え、足元の技術とロングキックでビルドアップに貢献できる点は唯一無二。怪我で離脱はあったものの、パルマでもレギュラーであり、代表キャップも22を重ねている。スターターは鈴木彩艶で疑いの余地はないだろう。\n\n" +
-          "残り2枠について、総合評価を見ると早川友基がやや抜けてはいるものの、谷晃生、小久保玲央ブライアン、大迫敬介、野澤大志ブランドンを含め横並びの印象を受ける。これらのメンバーが入る可能性は十分考えられるが、控えGKはサポート的な役割も多く含まれるため、現チームへの親和性という点で、これまで好んで選ばれてきた早川・大迫という序列は変わらないと予測する。",
-        en:
-          "Zion Suzuki is the undisputed number one goalkeeper. His combination of shot-stopping quality, technical ability on the ball, and long distribution skill makes him uniquely suited to contribute to build-up play — qualities that are genuinely hard to replicate at this level. Despite a spell on the sidelines through injury, he has maintained his starting spot at Parma and has 22 international caps to his name. The starting position is not up for debate.\n\n" +
-          "For the remaining two places, the overall scores put Tomoki Hayakawa slightly ahead of the group, with Kósei Tani, Leo Brian Kokubo, Keisuke Osako, and Taishi Brandon Nozawa all tightly clustered behind him. Any of them could make a case for inclusion — but backup goalkeepers carry significant off-pitch support responsibilities, and with familiarity within the team set-up as a real factor, we expect the established preference for Hayakawa and Osako to hold.",
-      },
-    },
 
     {
       type: "chart",
@@ -112,9 +101,29 @@ export const japanSquad2026 = {
         en: "Contribution of each metric to the overall score. ★ = trait bonus, ▲ = condition penalty.",
       },
     },
+    {
+      type: "p",
+      text: {
+        ja:
+          "GKで絶対的な存在は鈴木彩艶だ。セービング力の高さに加え、足元の技術とロングキックでビルドアップに貢献できる点は唯一無二。怪我で離脱はあったものの、パルマでもレギュラーであり、代表キャップも22を重ねている。スターターは鈴木彩艶で疑いの余地はないだろう。\n\n" +
+          "残り2枠について、総合評価を見ると早川友基がやや抜けてはいるものの、谷晃生、小久保玲央ブライアン、大迫敬介、野澤大志ブランドンを含め横並びの印象を受ける。これらのメンバーが入る可能性は十分考えられるが、控えGKはサポート的な役割も多く含まれるため、現チームへの親和性という点で、これまで好んで選ばれてきた早川・大迫という序列は変わらないと予測する。",
+        en:
+          "Zion Suzuki is the undisputed number one goalkeeper. His combination of shot-stopping quality, technical ability on the ball, and long distribution skill makes him uniquely suited to contribute to build-up play — qualities that are genuinely hard to replicate at this level. Despite a spell on the sidelines through injury, he has maintained his starting spot at Parma and has 22 international caps to his name. The starting position is not up for debate.\n\n" +
+          "For the remaining two places, the scores put Tomoki Hayakawa slightly ahead of the group, with Kósei Tani, Leo Brian Kokubo, Keisuke Osako, and Taishi Brandon Nozawa all closely clustered behind — but backup goalkeepers carry significant off-pitch support responsibilities, and in terms of familiarity within the current setup, we expect the established preference for Hayakawa and Osako to hold.",
+      },
+    },
 
     // ── DF ──────────────────────────────────────────────────
     { type: "h2", text: { ja: "DF（8枠前後）", en: "Defenders (approx. 8 spots)" } },
+
+    {
+      type: "chart",
+      chartKey: "squad_bar_df",
+      caption: {
+        ja: "各指標の総合評価への寄与量。★ = 特性補正あり、▲ = コンディション低下。",
+        en: "Contribution of each metric to the overall score. ★ = trait bonus, ▲ = condition penalty.",
+      },
+    },
     {
       type: "p",
       text: {
@@ -125,7 +134,7 @@ export const japanSquad2026 = {
           "注目は冨安健洋だ。まだ復帰途上と言え、アヤックスで出場わずか6試合198分に留まっており、現時点の総合評価は実力を反映していない。完調時のパフォーマンスはレベルの高いDF陣の中でも異色。短時間であっても起用したくなる頼もしさがあるため、フル稼働が見込めずともメンバー入りの可能性は十分ありうるが、回復状況を最も注視したい選手の一人だ。\n\n" +
           "板倉滉・高井幸大・安藤 智哉・町田浩樹はいずれも選ばれる実力があるが、現時点では怪我を抱えており不透明。上記冨安と同様に、今後のコンディション、所属クラブでの活躍次第と言える。同ポジションにコンディションが不安な選手を複数抱えるわけにはいかないため、状況次第では橋岡大樹や荒木隼人が滑り込む可能性も考えられる。",
         en:
-          "The established core consists of Shogo Taniguchi, Tsuyoshi Watanabe, Hiroki Ito, and Junnosuke Suzuki. Taniguchi is already the de facto leader of the defensive unit, combining authority with experience. Watanabe’s physical edge and intensity in one-on-one duels stands out clearly. Hiroki Ito’s long delivery is a clear weapon, and his standard at Bayern Munich speaks for itself. Junnosuke Suzuki is a versatile, ball-carrying full-back who could well become a long-term pillar of the national side.\n\n" +
+          "The established core consists of Shogo Taniguchi, Tsuyoshi Watanabe, Hiroki Ito, and Junnosuke Suzuki. Taniguchi is already the de facto leader of the defensive unit, combining authority with experience. Watanabe’s physical edge and intensity in one-on-one duels stands out clearly. Hiroki Ito’s long delivery is a clear weapon, and his standard at Bayern Munich speaks for itself. Junnosuke Suzuki is a versatile, ball-carrying defender who is emerging as a long-term pillar of the national side.\n\n" +
           "Yukinari Sugawara has sometimes sat on the margins of selection, but he featured in both matches against Scotland and England and has maintained a consistent run of Bundesliga appearances. He looks a likely inclusion as backup right-back or right wing-back.\n\n" +
           "Ayumu Seko is arguably one of the more underrated names in the squad, despite some high-profile defensive lapses that have invited scrutiny at international level. His record in Europe tells a fuller story — composure on the ball, range with his long passing, and the capacity to operate as an anchor midfielder at club level. Add a clean injury record to that, and he is exactly the kind of dependable all-rounder short tournaments thrive on.\n\n" +
           "Takehiro Tomiyasu is the name everyone is watching. Still making his way back, he has managed just six appearances and 198 minutes at Ajax — and his overall score at this point does not reflect his actual level. When fully fit, he stands in a class of his own among this group of defenders. Any manager will want him available even for limited minutes, and his inclusion despite less-than-full fitness remains entirely plausible. Even so, his recovery is the single most closely watched storyline in this entire squad picture.\n\n" +
@@ -133,17 +142,17 @@ export const japanSquad2026 = {
       },
     },
 
+    // ── MF ──────────────────────────────────────────────────
+    { type: "h2", text: { ja: "MF（10枠前後）", en: "Midfielders (approx. 10 spots)" } },
+
     {
       type: "chart",
-      chartKey: "squad_bar_df",
+      chartKey: "squad_bar_mf",
       caption: {
         ja: "各指標の総合評価への寄与量。★ = 特性補正あり、▲ = コンディション低下。",
         en: "Contribution of each metric to the overall score. ★ = trait bonus, ▲ = condition penalty.",
       },
     },
-
-    // ── MF ──────────────────────────────────────────────────
-    { type: "h2", text: { ja: "MF（10枠前後）", en: "Midfielders (approx. 10 spots)" } },
     {
       type: "p",
       text: {
@@ -160,17 +169,17 @@ export const japanSquad2026 = {
       },
     },
 
+    // ── FW ──────────────────────────────────────────────────
+    { type: "h2", text: { ja: "FW（4枠前後）", en: "Forwards (approx. 4 spots)" } },
+
     {
       type: "chart",
-      chartKey: "squad_bar_mf",
+      chartKey: "squad_bar_fw",
       caption: {
         ja: "各指標の総合評価への寄与量。★ = 特性補正あり、▲ = コンディション低下。",
         en: "Contribution of each metric to the overall score. ★ = trait bonus, ▲ = condition penalty.",
       },
     },
-
-    // ── FW ──────────────────────────────────────────────────
-    { type: "h2", text: { ja: "FW（4枠前後）", en: "Forwards (approx. 4 spots)" } },
     {
       type: "p",
       text: {
@@ -184,15 +193,6 @@ export const japanSquad2026 = {
           "Daizen Maeda is also automatic. His deployment as a wide forward has sometimes limited his direct impact, but his relentless pressing from the front is a weapon that does not depend on match rhythm or form — it simply is what he does. When the team is under pressure, he reliably shifts the balance back in Japan's favour.\n\n" +
           "The player who made the biggest impression on the British tour was Kento Shiogai. His pace, explosive movement, physicality, and aggressive approach create a constant sense that something is about to happen — and we genuinely want to see him force his way into regular minutes at Wolfsburg in the time that remains.\n\n" +
           "The remaining spot or spots come down to Koki Ogawa, Keisuke Goto, and Shuto Machino. Any of them could make the cut, but Machino's near-total absence from club action is a serious concern. Ogawa brings a clear aerial weapon but has also struggled to secure regular minutes at club level. Keisuke Goto has had a productive season at Sint-Truiden — and going into the final run-in, he has every reason to feel genuinely in contention.",
-      },
-    },
-
-    {
-      type: "chart",
-      chartKey: "squad_bar_fw",
-      caption: {
-        ja: "各指標の総合評価への寄与量。★ = 特性補正あり、▲ = コンディション低下。",
-        en: "Contribution of each metric to the overall score. ★ = trait bonus, ▲ = condition penalty.",
       },
     },
 

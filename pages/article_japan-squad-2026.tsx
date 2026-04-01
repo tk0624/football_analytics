@@ -5,12 +5,14 @@ import styles from "../styles/Article.module.css";
 import { useI18n } from "../contexts/I18n";
 import { japanSquad2026, pickText, renderLines } from "../content/articles/japan_squad_2026";
 import PlotlyChart from "../components/PlotlyChart";
+import SquadTable from "../components/SquadTable";
 
 import squadBarGkJson from "../public/charts/squad_bar_gk.json";
 import squadBarDfJson from "../public/charts/squad_bar_df.json";
 import squadBarMfJson from "../public/charts/squad_bar_mf.json";
 import squadBarFwJson from "../public/charts/squad_bar_fw.json";
 import squadScatterJson from "../public/charts/squad_scatter.json";
+import squadTableJson from "../public/charts/squad_table.json";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const chartMap: Record<string, { data: any[]; layout: any }> = {
@@ -62,6 +64,17 @@ export default function JapanSquad2026Article() {
           }
 
           if (b.type === "chart") {
+            if (b.chartKey === "table_squad_all") {
+              return (
+                <SquadTable
+                  key={idx}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  players={(squadTableJson as any).players}
+                  lang={lang}
+                  caption={b.caption ? pickText(b.caption, lang) : undefined}
+                />
+              );
+            }
             const chart = chartMap[b.chartKey];
             if (!chart) return null;
             return (

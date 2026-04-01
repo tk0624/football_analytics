@@ -1,0 +1,481 @@
+{
+  "players": [
+    {
+      "pos": "GK",
+      "name_jp": "鈴木 彩艶",
+      "name_en": "SUZUKI Zion",
+      "club": "パルマ (イタリア)",
+      "overall": 4.67,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "GK",
+      "name_jp": "早川 友基",
+      "name_en": "HAYAKAWA Tomoki",
+      "club": "鹿島アントラーズ",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "GK",
+      "name_jp": "谷 晃生",
+      "name_en": "TANI Kosei",
+      "club": "町田ゼルビア",
+      "overall": 3.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "GK",
+      "name_jp": "小久保 玲央ブライアン",
+      "name_en": "KOKUBO LeoBrian",
+      "club": "シント・トロイデン (ベルギー)",
+      "overall": 3.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "GK",
+      "name_jp": "大迫 敬介",
+      "name_en": "OSAKO Keisuke",
+      "club": "サンフレッチェ広島",
+      "overall": 3.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "GK",
+      "name_jp": "野澤 大志ブランドン",
+      "name_en": "NOZAWA Taishi Brandon",
+      "club": "ロイヤル・アントワープ (ベルギー)",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "谷口 彰悟",
+      "name_en": "TANIGUCHI Shogo",
+      "club": "シント・トロイデン (ベルギー)",
+      "overall": 4.8,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "DF",
+      "name_jp": "渡辺 剛",
+      "name_en": "WATANABE Tsuyosi",
+      "club": "フェイエノールト (オランダ)",
+      "overall": 4.4,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "DF",
+      "name_jp": "菅原 由勢",
+      "name_en": "SUGAWARA Yukinari",
+      "club": "ベルダー・ブレーメン (ドイツ)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "伊藤 洋輝",
+      "name_en": "ITO Hiroki",
+      "club": "バイエルン・ミュンヘン (ドイツ)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "DF",
+      "name_jp": "鈴木 淳之介",
+      "name_en": "SUZUKI Junnosuke",
+      "club": "FCコペンハーゲン (デンマーク)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "DF",
+      "name_jp": "瀬古 歩夢",
+      "name_en": "SEKO Ayumu",
+      "club": "ル・アーヴル (フランス)",
+      "overall": 3.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "荒木 隼人",
+      "name_en": "ARAKI Hayato",
+      "club": "サンフレッチェ広島",
+      "overall": 3.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "冨安 健洋",
+      "name_en": "TOMIYASU Takehiro",
+      "club": "アヤックス (オランダ)",
+      "overall": 3.15,
+      "condition": 2,
+      "weapon": 2
+    },
+    {
+      "pos": "DF",
+      "name_jp": "板倉 滉",
+      "name_en": "ITAKURA Ko",
+      "club": "アヤックス (オランダ)",
+      "overall": 3.0,
+      "condition": 2,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "長友 佑都",
+      "name_en": "NAGATOMO Yuto",
+      "club": "FC東京",
+      "overall": 2.75,
+      "condition": 2,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "橋岡 大樹",
+      "name_en": "HASHIOKA Daiki",
+      "club": "ヘント (ベルギー)",
+      "overall": 2.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "関根 大輝",
+      "name_en": "SEKINE Hiroki",
+      "club": "スタッド・ランス (フランス)",
+      "overall": 2.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "安藤 智哉",
+      "name_en": "ANDO Tomoya",
+      "club": "ザンクトパウリ (ドイツ)",
+      "overall": 1.75,
+      "condition": 2,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "高井 幸大",
+      "name_en": "TAKAI Kota",
+      "club": "川崎フロンターレ",
+      "overall": 1.25,
+      "condition": 2,
+      "weapon": 0
+    },
+    {
+      "pos": "DF",
+      "name_jp": "町田 浩樹",
+      "name_en": "MACHIDA Koki",
+      "club": "ユニオン・サン・ジロワーズ (ベルギー)",
+      "overall": 1.17,
+      "condition": 1,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "佐野 海舟",
+      "name_en": "SANO Kaishu",
+      "club": "マインツ05 (ドイツ)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "MF",
+      "name_jp": "鎌田 大地",
+      "name_en": "KAMADA Daichi",
+      "club": "クリスタル・パレス (イングランド)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "MF",
+      "name_jp": "三笘 薫",
+      "name_en": "MITOMA Kaoru",
+      "club": "ブライトン＆ホーヴ・アルビオン (イングランド)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "MF",
+      "name_jp": "堂安 律",
+      "name_en": "DOAN Ritsu",
+      "club": "アイントラハト・フランクフルト (ドイツ)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "伊東 純也",
+      "name_en": "ITO Junya",
+      "club": "ヘンク (ベルギー)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "MF",
+      "name_jp": "中村 敬斗",
+      "name_en": "NAKAMURA Keito",
+      "club": "スタッド・ランス (フランス)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "守田 英正",
+      "name_en": "MORITA Hidemasa",
+      "club": "スポルティングCP (ポルトガル)",
+      "overall": 4.4,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "相馬 勇紀",
+      "name_en": "SOMA yuki",
+      "club": "町田ゼルビア",
+      "overall": 4.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "久保 建英",
+      "name_en": "KUBO Takefusa",
+      "club": "レアル・ソシエダ (スペイン)",
+      "overall": 4.2,
+      "condition": 2,
+      "weapon": 2
+    },
+    {
+      "pos": "MF",
+      "name_jp": "藤田 譲瑠チマ",
+      "name_en": "FUJITA Joeru Chima",
+      "club": "ザンクトパウリ (ドイツ)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "佐野 航大",
+      "name_en": "SANO Kodai",
+      "club": "NECナイメヘン (オランダ)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "田中 碧",
+      "name_en": "TANAKA Ao",
+      "club": "リーズ・ユナイテッド (イングランド)",
+      "overall": 4.0,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "望月 ヘンリー海輝",
+      "name_en": "MOCHIZUKI Henry Hiroki",
+      "club": "町田ゼルビア",
+      "overall": 3.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "鈴木 唯人",
+      "name_en": "SUZUKI Yuito",
+      "club": "フライブルク (ドイツ)",
+      "overall": 3.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "遠藤 航",
+      "name_en": "ENDO Wataru",
+      "club": "リバプール (イングランド)",
+      "overall": 3.0,
+      "condition": 2,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "森下 龍矢",
+      "name_en": "MORISHITA Ryoya",
+      "club": "レギア・ワルシャワ (ポーランド)",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "佐藤 龍之介",
+      "name_en": "SATO Ryunosuke",
+      "club": "FC東京",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "三戸 舜介",
+      "name_en": "MITO Shunsuke",
+      "club": "スパルタ・ロッテルダム (オランダ)",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "斉藤 光毅",
+      "name_en": "SAITO Koki",
+      "club": "クイーンズ・パーク・レンジャーズ (イングランド)",
+      "overall": 2.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "南野 拓実",
+      "name_en": "MINAMINO Takumi",
+      "club": "ASモナコ (フランス)",
+      "overall": 2.2,
+      "condition": 1,
+      "weapon": 1
+    },
+    {
+      "pos": "MF",
+      "name_jp": "俵積田 晃太",
+      "name_en": "TAWARATSUMIDA Kota",
+      "club": "FC東京",
+      "overall": 1.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "MF",
+      "name_jp": "熊坂 光希",
+      "name_en": "KUMASAKA Koki",
+      "club": "柏レイソル",
+      "overall": 1.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "上田 綺世",
+      "name_en": "UEDA Ayase",
+      "club": "フェイエノールト (オランダ)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "FW",
+      "name_jp": "前田 大然",
+      "name_en": "MAEDA Daizen",
+      "club": "セルティック (スコットランド)",
+      "overall": 5.0,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "FW",
+      "name_jp": "小川 航基",
+      "name_en": "OGAWA Koki",
+      "club": "NECナイメヘン (オランダ)",
+      "overall": 3.6,
+      "condition": 3,
+      "weapon": 1
+    },
+    {
+      "pos": "FW",
+      "name_jp": "後藤 啓介",
+      "name_en": "GOTŌ Keisuke",
+      "club": "シント・トロイデン (ベルギー)",
+      "overall": 3.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "塩貝 健斗",
+      "name_en": "SHIOGAI Kento",
+      "club": "ボルフスブルク (ドイツ)",
+      "overall": 3.27,
+      "condition": 3,
+      "weapon": 2
+    },
+    {
+      "pos": "FW",
+      "name_jp": "大橋 祐紀",
+      "name_en": "OHASHI Yuki",
+      "club": "ブラックバーン・ローヴァーズ (イングランド)",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "細谷 真大",
+      "name_en": "HOSOYA Mao",
+      "club": "柏レイソル",
+      "overall": 3.0,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "町野 修斗",
+      "name_en": "MACHINO Shuto",
+      "club": "ボルシア・メンヒェングラートバッハ (ドイツ)",
+      "overall": 2.67,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "平河 悠",
+      "name_en": "HIRAKAWA Yu",
+      "club": "ブリストル・シティ (イングランド)",
+      "overall": 2.33,
+      "condition": 3,
+      "weapon": 0
+    },
+    {
+      "pos": "FW",
+      "name_jp": "北野 颯太",
+      "name_en": "KITANO Sota",
+      "club": "レッドブル・ザルツブルク (オーストリア)",
+      "overall": 2.33,
+      "condition": 3,
+      "weapon": 0
+    }
+  ]
+}
