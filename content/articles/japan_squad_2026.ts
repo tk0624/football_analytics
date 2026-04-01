@@ -21,7 +21,7 @@ export const japanSquad2026 = {
       "Japan wrapped up their final pre-tournament European tour in the best possible fashion, beating Scotland and England 1-0 in successive matches.\n" +
       "With the World Cup kicking off on 11 June 2026 — just under two months away — the debate over the final 26-man squad is becoming very real.\n" +
       "In this article, we evaluate 53 candidate players using a proprietary quantitative metric.\n" +
-      "The scoring system combines three axes — club playing time (APTS), FotMob average score, and a Japan national team cap evaluation — adjusted by a league coefficient, then further modified by the player's current condition and the presence of a standout trait bonus.\n" +
+      "The scoring system combines three axes — Club Contribution Score, FotMob average score, and a Japan national team cap evaluation — adjusted by a league coefficient, then further modified by the player's current condition and the presence of a standout trait bonus.\n" +
       "This is a purely quantitative exercise, separate from tactical fit or coaching staff assessments. Our aim is to provide a structured reference — organising candidates along the three axes of club performance, international experience, and current fitness — to support the squad selection debate.",
   } as Text,
 
@@ -71,8 +71,8 @@ export const japanSquad2026 = {
       type: "chart",
       chartKey: "squad_scatter",
       caption: {
-        ja: "横軸：APTS評価（クラブ出場率×リーグ係数×100）\n縦軸：総合評価\nプロットサイズ：特性補正の強さ\nポジション別で表示を切り替えられます。",
-        en: "X-axis: APTS score (playing time ratio × league coeff × 100)\nY-axis: Overall score\nBubble size: Trait bonus magnitude\nToggle display by position.",
+        ja: "横軸：クラブ貢献評価（クラブ出場率×リーグ係数×100）\n縦軸：総合評価\nプロットサイズ：特性補正の強さ\nポジション別で表示を切り替えられます。",
+        en: "X-axis: Club Contribution Score (playing time ratio × league coeff × 100)\nY-axis: Overall score\nBubble size: Trait bonus magnitude\nToggle display by position.",
       },
     },
 
