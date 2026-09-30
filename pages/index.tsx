@@ -75,6 +75,17 @@ export default function Home() {
             <span className={styles.cardReadLink}>{t("cardTomiyasuRead")} →</span>
           </Link>
 
+          {/* 鈴木彩艶記事 */}
+          <Link href="/article_zion-suzuki-trends-test/" className={styles.articleCard}>
+            <span className={styles.cardTag}>{t("cardZionTag")}</span>
+            <div className={styles.cardMeta}>
+              <span className={styles.cardPlayer}>{t("cardZionTitle")}</span>
+              <span className={styles.cardTeam}>{t("cardZionTeam")}</span>
+            </div>
+            <p className={styles.cardDesc}>{t("cardZionDesc")}</p>
+            <span className={styles.cardReadLink}>{t("cardZionRead")} →</span>
+          </Link>
+
         </div>
       </section>
     </Layout>

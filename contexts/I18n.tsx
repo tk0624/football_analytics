@@ -71,7 +71,17 @@ const dictionary: Dict = {
     en: "CB quality revealed through SB data"
   },
   cardTomiyasuRead:  { ja: "分析を読む", en: "Read analysis" },
-  cardWipBadge:      { ja: "作成中", en: "In progress" },
+
+  // 鈴木彩艶記事カード
+  cardZionTag:   { ja: "注目度・評価のPoC", en: "Attention & Reception PoC" },
+  cardZionTitle: { ja: "鈴木彩艶", en: "Zion Suzuki" },
+  cardZionTeam:  { ja: "Google Trends × Reddit", en: "Google Trends × Reddit" },
+  cardZionDesc:  {
+    ja: "どの時期に人気が上がったのか、何が評価されているのかを可視化する試み",
+    en: "A prototype visualizing when interest peaked and what themes are being praised."
+  },
+  cardZionRead:  { ja: "記事を見る", en: "Read article" },
+  cardWipBadge:  { ja: "作成中", en: "In progress" },
 };
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
