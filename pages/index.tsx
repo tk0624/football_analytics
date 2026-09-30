@@ -16,13 +16,18 @@ export default function Home() {
         style={{
           backgroundImage: `url(${heroBg.src})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className={styles.heroContent}>
           <h1>{t("homeTitle")}</h1>
           <p>{t("homeLead")}</p>
+        </div>
+
+        <div className={styles.heroBrand}>
+          <span className={styles.heroBrandDot} />
+          <span>{t("brand")}</span>
         </div>
       </section>
 

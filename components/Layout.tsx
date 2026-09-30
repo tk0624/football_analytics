@@ -10,11 +10,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className={styles.page}>
       <header className={styles.nav}>
-        <div className={styles.logoArea}>
-          <span className={styles.logoDot} />
-          <span className={styles.brand}>{t("brand")}</span>
-        </div>
-
         <nav className={styles.menu}>
           <Link href="/" className={styles.menuLink}>
             {t("navHome")}
