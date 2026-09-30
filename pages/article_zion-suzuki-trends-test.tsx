@@ -160,6 +160,21 @@ export default function ZionSuzukiTrendsTestPage() {
                 </div>
               ))}
             </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12, marginTop: 10 }}>
+              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
+                <div style={{ color: "#7ed957", fontWeight: 700, marginBottom: 6 }}>World Cup period</div>
+                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-06-30 to 2026-07-15</div>
+              </div>
+              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
+                <div style={{ color: "#ff914d", fontWeight: 700, marginBottom: 6 }}>Aston Villa joining decision</div>
+                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-08-15 to 2026-08-31</div>
+              </div>
+              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
+                <div style={{ color: "#7cc8ff", fontWeight: 700, marginBottom: 6 }}>Match appearances</div>
+                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-09-01 to 2026-09-30</div>
+              </div>
+            </div>
           </div>
         </section>
 
