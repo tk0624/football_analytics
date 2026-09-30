@@ -7,13 +7,16 @@ const renderExploreWidget = (widgetType: "TIMESERIES" | "GEO_MAP") => {
   };
 
   const config = {
-    comparisonItem: [{ keyword: "/g/11fn46m_dk", geo: "", time: "today 12-m" }],
+    comparisonItem: [
+      { keyword: "/g/11fn46m_dk", geo: "", time: "today 12-m" },
+      { keyword: "/m/0g9_3rx", geo: "", time: "today 12-m" },
+    ],
     category: 0,
     property: "youtube",
   };
 
   const options = {
-    exploreQuery: "gprop=youtube&q=%2Fg%2F11fn46m_dk&hl=ja&date=today 12-m",
+    exploreQuery: "gprop=youtube&q=%2Fg%2F11fn46m_dk,%2Fm%2F0g9_3rx&hl=ja&date=today 12-m,today 12-m",
     guestPath: "https://trends.google.co.jp:443/trends/embed/",
   };
 
@@ -110,8 +113,8 @@ export default function ZionSuzukiTrendsTestPage() {
 
         <p style={{ color: "#d9d9d9", lineHeight: 1.8, marginBottom: 20 }}>
           This is a lightweight PoC to test whether search interest rises around major events.
-          The key question is whether the attention curve lines up with notable moments such as the World Cup cycle,
-          the Aston Villa move, and match appearances.
+          The comparison against Kolo Touré helps assess whether Zion’s spikes behave like a similarly discussed defensive profile,
+          or whether the surge is more tied to World Cup timing, transfer buzz, or match-day moments.
         </p>
 
         <section style={{ marginBottom: 32 }}>
