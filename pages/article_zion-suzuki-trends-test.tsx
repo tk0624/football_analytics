@@ -121,59 +121,32 @@ export default function ZionSuzukiTrendsTestPage() {
           <h2 style={{ fontSize: "1.5rem", marginBottom: 14 }}>Key event windows</h2>
 
           <div style={{ border: "1px solid #2a2a2a", borderRadius: 12, background: "#141414", padding: 16 }}>
-            <div style={{ position: "relative", height: 110, marginBottom: 18 }}>
-              <div style={{ position: "absolute", left: 0, right: 0, top: 48, height: 2, background: "#2d2d2d" }} />
-              <div style={{ position: "absolute", left: 0, right: 0, top: 38, display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 12, color: "#9a9a9a" }}>
-                <span>2026-06-30</span>
-                <span>2026-09-30</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 12, color: "#9a9a9a", marginBottom: 14 }}>
+              <span>2026-06-30</span>
+              <span>2026-09-30</span>
+            </div>
 
+            <div style={{ display: "grid", gap: 12 }}>
               {eventWindows.map((event) => (
                 <div
                   key={event.label}
                   style={{
-                    position: "absolute",
-                    left: event.left,
-                    top: 20,
-                    width: event.width,
-                    minWidth: 120,
-                    height: 52,
                     borderRadius: 10,
                     background: `${event.color}22`,
                     border: `1px solid ${event.color}`,
                     boxShadow: `inset 0 0 0 1px ${event.color}33`,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    textAlign: "center",
                     color: "#f5f5f5",
-                    fontWeight: 700,
-                    fontSize: 12,
-                    padding: 8,
+                    padding: 12,
                     boxSizing: "border-box",
                   }}
                 >
-                  <div>
-                    <div>{event.label}</div>
-                    <div style={{ fontSize: 10, opacity: 0.8, marginTop: 4 }}>{event.note}</div>
+                  <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+                    <div style={{ fontWeight: 700, fontSize: 13 }}>{event.label}</div>
+                    <div style={{ fontSize: 11, color: "#d9d9d9" }}>{event.start} — {event.end}</div>
                   </div>
+                  <div style={{ fontSize: 11, opacity: 0.8, marginTop: 6 }}>{event.note}</div>
                 </div>
               ))}
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12, marginTop: 10 }}>
-              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
-                <div style={{ color: "#7ed957", fontWeight: 700, marginBottom: 6 }}>World Cup period</div>
-                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-06-30 to 2026-07-15</div>
-              </div>
-              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
-                <div style={{ color: "#ff914d", fontWeight: 700, marginBottom: 6 }}>Aston Villa joining decision</div>
-                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-08-15 to 2026-08-31</div>
-              </div>
-              <div style={{ border: "1px solid #2d2d2d", borderRadius: 10, padding: 12, background: "#181818" }}>
-                <div style={{ color: "#7cc8ff", fontWeight: 700, marginBottom: 6 }}>Match appearances</div>
-                <div style={{ color: "#d9d9d9", lineHeight: 1.6 }}>2026-09-01 to 2026-09-30</div>
-              </div>
             </div>
           </div>
         </section>
